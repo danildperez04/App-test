@@ -46,7 +46,7 @@ public class FrmPreguntas extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(60, 103, 139));
         jPanel1.setPreferredSize(new java.awt.Dimension(400, 400));
 
-        jLabel1.setText("                           IMAGEN");
+        jLabel1.setText("Prueba");
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
