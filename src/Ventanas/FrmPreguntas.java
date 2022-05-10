@@ -53,7 +53,7 @@ public class FrmPreguntas extends javax.swing.JFrame {
         LblPregunta.setBackground(new java.awt.Color(255, 255, 255));
         LblPregunta.setFont(new java.awt.Font("Arial Narrow", 1, 18)); // NOI18N
         LblPregunta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LblPregunta.setText("Pregunta");
+        LblPregunta.setText("PREGUNTA");
         LblPregunta.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         LblPregunta.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         LblPregunta.setOpaque(true);
@@ -64,6 +64,7 @@ public class FrmPreguntas extends javax.swing.JFrame {
         BtnResp1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/estrella.png"))); // NOI18N
         BtnResp1.setText("Respuesta 1");
         BtnResp1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        BtnResp1.setOpaque(false);
         BtnResp1.setRolloverEnabled(false);
         BtnResp1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -82,6 +83,7 @@ public class FrmPreguntas extends javax.swing.JFrame {
         BtnResp2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/estrella.png"))); // NOI18N
         BtnResp2.setText("Respuesta 2");
         BtnResp2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        BtnResp2.setOpaque(false);
         BtnResp2.setRolloverEnabled(false);
         BtnResp2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -95,6 +97,7 @@ public class FrmPreguntas extends javax.swing.JFrame {
         BtnResp3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/estrella.png"))); // NOI18N
         BtnResp3.setText("Respuesta 3");
         BtnResp3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        BtnResp3.setOpaque(false);
         BtnResp3.setRolloverEnabled(false);
         BtnResp3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -108,6 +111,7 @@ public class FrmPreguntas extends javax.swing.JFrame {
         BtnResp4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/estrella.png"))); // NOI18N
         BtnResp4.setText("Respuesta 4");
         BtnResp4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        BtnResp4.setOpaque(false);
         BtnResp4.setRolloverEnabled(false);
         BtnResp4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -209,7 +213,7 @@ public class FrmPreguntas extends javax.swing.JFrame {
         var buttonColor = btn.getBackground();
         btn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btn.setBackground(Color.GREEN);
+                btn.setBackground(new Color(20, 37, 66));
             }
 
             public void mouseExited(java.awt.event.MouseEvent evt) {
