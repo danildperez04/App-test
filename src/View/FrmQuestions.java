@@ -1,25 +1,11 @@
-package Ventanas;
+package View;
 
 import java.awt.Color;
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
-import javax.swing.UIManager;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
-
-/**
- *
- * @author Dani-
- */
-public class FrmPreguntas extends javax.swing.JFrame {
-
-    /**
-     * Creates new form FrmPreguntas
-     */
-    public FrmPreguntas() {
+public class FrmQuestions extends javax.swing.JFrame {
+    public FrmQuestions() {
         initComponents();
     }
 
@@ -63,8 +49,8 @@ public class FrmPreguntas extends javax.swing.JFrame {
         BtnResp1.setForeground(new java.awt.Color(255, 255, 255));
         BtnResp1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/estrella.png"))); // NOI18N
         BtnResp1.setText("Respuesta 1");
+        BtnResp1.setFocusable(false);
         BtnResp1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        BtnResp1.setOpaque(false);
         BtnResp1.setRolloverEnabled(false);
         BtnResp1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -82,8 +68,8 @@ public class FrmPreguntas extends javax.swing.JFrame {
         BtnResp2.setForeground(new java.awt.Color(255, 255, 255));
         BtnResp2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/estrella.png"))); // NOI18N
         BtnResp2.setText("Respuesta 2");
+        BtnResp2.setFocusable(false);
         BtnResp2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        BtnResp2.setOpaque(false);
         BtnResp2.setRolloverEnabled(false);
         BtnResp2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -96,8 +82,8 @@ public class FrmPreguntas extends javax.swing.JFrame {
         BtnResp3.setForeground(new java.awt.Color(255, 255, 255));
         BtnResp3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/estrella.png"))); // NOI18N
         BtnResp3.setText("Respuesta 3");
+        BtnResp3.setFocusable(false);
         BtnResp3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        BtnResp3.setOpaque(false);
         BtnResp3.setRolloverEnabled(false);
         BtnResp3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -110,8 +96,8 @@ public class FrmPreguntas extends javax.swing.JFrame {
         BtnResp4.setForeground(new java.awt.Color(255, 255, 255));
         BtnResp4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/estrella.png"))); // NOI18N
         BtnResp4.setText("Respuesta 4");
+        BtnResp4.setFocusable(false);
         BtnResp4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        BtnResp4.setOpaque(false);
         BtnResp4.setRolloverEnabled(false);
         BtnResp4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -121,6 +107,7 @@ public class FrmPreguntas extends javax.swing.JFrame {
 
         jButton1.setBackground(new java.awt.Color(36, 56, 91));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ayudar.png"))); // NOI18N
+        jButton1.setFocusable(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -201,7 +188,7 @@ public class FrmPreguntas extends javax.swing.JFrame {
     }//GEN-LAST:event_BtnResp4MouseEntered
 
     private void BtnResp1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnResp1ActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_BtnResp1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -222,50 +209,15 @@ public class FrmPreguntas extends javax.swing.JFrame {
         });
     }
     
-    
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FrmPreguntas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FrmPreguntas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FrmPreguntas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FrmPreguntas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new FrmPreguntas().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton BtnResp1;
-    private javax.swing.JButton BtnResp2;
-    private javax.swing.JButton BtnResp3;
-    private javax.swing.JButton BtnResp4;
-    private javax.swing.JLabel LblImagenPregunta;
-    private javax.swing.JLabel LblPregunta;
+    public javax.swing.JButton BtnResp1;
+    public javax.swing.JButton BtnResp2;
+    public javax.swing.JButton BtnResp3;
+    public javax.swing.JButton BtnResp4;
+    public javax.swing.JLabel LblImagenPregunta;
+    public javax.swing.JLabel LblPregunta;
     private javax.swing.JPanel PPrincipal;
-    private javax.swing.JButton jButton1;
+    public javax.swing.JButton jButton1;
     // End of variables declaration//GEN-END:variables
 }
