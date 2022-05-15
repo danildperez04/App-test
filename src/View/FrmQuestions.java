@@ -196,7 +196,7 @@ public class FrmQuestions extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     
-    public void mouseHover(JButton btn){
+    /*public void mouseHover(JButton btn){
         var buttonColor = btn.getBackground();
         btn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -207,7 +207,7 @@ public class FrmQuestions extends javax.swing.JFrame {
                 btn.setBackground(buttonColor);
             }
         });
-    }
+    }*/
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

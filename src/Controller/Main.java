@@ -9,5 +9,6 @@ public class Main {
         Question model = new Question();
         CQuestions cQuestions = new CQuestions(frm, model);
         frm.setVisible(true);
+         
     }
 }
