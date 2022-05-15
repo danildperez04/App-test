@@ -7,11 +7,14 @@ public class Question {
     //Constructors
     public Question(){}
     
-    public Question(String questionLabel, String[] answers, String src, int index) {
+    public Question(String questionLabel, String[] answers, String src, int indexQuestion, int indexCorrectAnswer) {
         this.questionLabel = questionLabel;
         this.answers = answers;
         this.imageLabel = new ImageIcon(getClass().getResource(src));
-        this.index = index;
+        this.indexQuestion = indexQuestion;
+        this.indexCorrectAnswer = indexCorrectAnswer;
+        
+        
     }
     
     //Getters
@@ -27,8 +30,12 @@ public class Question {
         return answers;
     }
     
-    public int getIndex() {
-        return index;
+    public int getIndexQuestion() {
+        return indexQuestion;
+    }
+    
+    public int getIndexCorrectAnswer() {
+        return indexCorrectAnswer;
     }
 
     //Setters
@@ -44,19 +51,25 @@ public class Question {
         this.imageLabel = new ImageIcon(getClass().getResource(src));
     }
 
-    public void setIndex(int index) {
-        this.index = index;
+    public void setIndex(int indexQuestion) {
+        this.indexQuestion = indexQuestion;
+    }
+    
+    public void setIndexCorrectAnswer(int indexCorrectAnswer) {
+        this.indexCorrectAnswer = indexCorrectAnswer;
     }
     
     //User
     @Override
     public String toString(){
-        return "Question: " + questionLabel + "\nAnswers: " + answers.toString() + "\nImage: " + imageLabel.toString() + "Index: " + index;
+        return "Question: " + questionLabel + "\nAnswers: " + answers.toString() + "\nImage: " + imageLabel.toString() + 
+                "Index: " + indexQuestion + "Index correct answer: " + indexCorrectAnswer; 
     }
     
     //Fields
     private String questionLabel;
     private String[] answers;
     private Icon imageLabel;
-    private int index;
+    private int indexQuestion;
+    private int indexCorrectAnswer;
 }

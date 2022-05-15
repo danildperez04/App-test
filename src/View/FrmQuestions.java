@@ -197,7 +197,7 @@ public class FrmQuestions extends javax.swing.JFrame {
 
     
     public void mouseHover(JButton btn){
-        var buttonColor = btn.getBackground();
+        Color buttonColor = btn.getBackground();
         btn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btn.setBackground(new Color(20, 37, 66));
