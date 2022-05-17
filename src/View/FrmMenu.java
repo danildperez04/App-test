@@ -34,7 +34,7 @@ public class FrmMenu extends javax.swing.JFrame {
         panelRound4 = new Model.PanelRound();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(720, 430));
+        setResizable(false);
 
         PPrincipal.setBackground(new java.awt.Color(18, 31, 61));
 
