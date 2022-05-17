@@ -9,15 +9,15 @@ import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
 import javax.swing.JButton;
-import javax.swing.JOptionPane;
 
 public class CQuestions {
     public CQuestions(FrmQuestions view, Question model){
         this.view = view;
         this.model = model;
         this.btnAnswers = new JButton[]{view.BtnResp1, view.BtnResp2, view.BtnResp3, view.BtnResp4};
-        getSequence(10);
         initQuestions();
+        getSequence(englishTestModel.getQuestions().size());
+        System.out.println(englishTestModel.getQuestions().size());
         updateQuestion(questions.get(sequenceQuestions.get(0)));
         initButtons();
     }
@@ -70,7 +70,7 @@ public class CQuestions {
             n++;
         }
         else{
-            JOptionPane.showMessageDialog(null, "Error");
+            view.dispose();
         }
     }
     
