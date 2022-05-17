@@ -1,6 +1,7 @@
 package View;
 
 import java.awt.Color;
+import java.util.Random;
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
 
@@ -192,7 +193,7 @@ public class FrmQuestions extends javax.swing.JFrame {
     }//GEN-LAST:event_BtnResp1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        JOptionPane.showMessageDialog(null, "Si no puedes responder una pregunta es porque no estudiaste burro", "Ayuda", 1);
+        JOptionPane.showMessageDialog(null, help[new Random().nextInt(help.length)], "Ayuda", 1);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     
@@ -220,4 +221,5 @@ public class FrmQuestions extends javax.swing.JFrame {
     private javax.swing.JPanel PPrincipal;
     public javax.swing.JButton jButton1;
     // End of variables declaration//GEN-END:variables
+    private String help[] = {"Hola", "Si", "Probando", "Sonido", "1", "2", "3", "4", "prueba", "xd"};
 }
