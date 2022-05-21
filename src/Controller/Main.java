@@ -2,11 +2,13 @@ package Controller;
 
 import Model.Question;
 import Model.Test;
+import View.FrmLogin;
 import View.FrmQuestions;
 
 public class Main {
     public static void main(String[] args) {
-        FrmQuestions frm = new FrmQuestions();
+        FrmLogin loginView = new FrmLogin();
+        /*FrmQuestions frm = new FrmQuestions();
         Question model = new Question();
         Test englishTest = new Test();
         englishTest.addQuestion(new Question("Cual es la pregunta1", new String[]{"Nada1", "Si hay1", "no1", "Ya1"}, "/Imagenes/pregunta (1).png", 0, 0));
@@ -20,7 +22,9 @@ public class Main {
         englishTest.addQuestion(new Question("Cual es la pregunta9", new String[]{"Nada9", "Si hay9", "no9", "Ya9"}, "/Imagenes/reina.png", 8, 3));
         englishTest.addQuestion(new Question("Cual es la pregunta10", new String[]{"Nada10", "Si hay10", "no10", "Ya10"}, "/Imagenes/reino-unido.png", 9, 2));
         CQuestions cQuestions = new CQuestions(frm, model, englishTest);
-        frm.setVisible(true);
-         
+        frm.setVisible(true);*/
+        
+        
+         loginView.setVisible(true);
     }
 }
