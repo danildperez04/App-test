@@ -1,20 +1,42 @@
 package Model;
 
-import java.security.GeneralSecurityException;
-import java.util.Scanner;
-import javax.crypto.spec.SecretKeySpec;
-
 public class User {
-    
-    private static void passwordCrypted() throws GeneralSecurityException{
+    public User(){}
 
+    public String getNombre() {
+        return nombre;
     }
-    
-    public static void main(String[] args) {
-        
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public static String getPassword() {
+        return password;
+    }
+
+    public static void setPassword(String password) {
+        User.password = password;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
     
     private String nombre;
+    private String email;
     private static String password;
-    private static Scanner sc = new Scanner(System.in);
+    private int id; 
 }

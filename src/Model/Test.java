@@ -18,4 +18,5 @@ public class Test {
     
     //Test Fields
     private ArrayList<Question> questions = new ArrayList<Question>();//Grupo de preguntas del test
+    private boolean status;
 }
