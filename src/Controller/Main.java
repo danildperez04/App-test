@@ -6,6 +6,7 @@ import View.FrmQuestions;
 
 public class Main {
     public static void main(String[] args) {
+        
         FrmQuestions frm = new FrmQuestions();
         Question model = new Question();
         Test englishTest = new Test();
@@ -21,6 +22,8 @@ public class Main {
         englishTest.addQuestion(new Question("Cual es la pregunta10", new String[]{"Nada10", "Si hay10", "no10", "Ya10"}, "/Imagenes/reino-unido.png", 9, 2));
         CQuestions cQuestions = new CQuestions(frm, model, englishTest);
         frm.setVisible(true);
-         
+        Cronometro c = new Cronometro();
+        c.Cronometro();
+        c.countdownTimer();
     }
 }

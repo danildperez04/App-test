@@ -27,6 +27,7 @@ public class FrmQuestions extends javax.swing.JFrame {
         BtnResp3 = new javax.swing.JButton();
         BtnResp4 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        gali = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Test Ingles Pregunta #");
@@ -52,7 +53,6 @@ public class FrmQuestions extends javax.swing.JFrame {
         BtnResp1.setText("Respuesta 1");
         BtnResp1.setFocusable(false);
         BtnResp1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        BtnResp1.setRolloverEnabled(false);
         BtnResp1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BtnResp1MouseEntered(evt);
@@ -71,7 +71,6 @@ public class FrmQuestions extends javax.swing.JFrame {
         BtnResp2.setText("Respuesta 2");
         BtnResp2.setFocusable(false);
         BtnResp2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        BtnResp2.setRolloverEnabled(false);
         BtnResp2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BtnResp2MouseEntered(evt);
@@ -85,7 +84,6 @@ public class FrmQuestions extends javax.swing.JFrame {
         BtnResp3.setText("Respuesta 3");
         BtnResp3.setFocusable(false);
         BtnResp3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        BtnResp3.setRolloverEnabled(false);
         BtnResp3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BtnResp3MouseEntered(evt);
@@ -99,7 +97,6 @@ public class FrmQuestions extends javax.swing.JFrame {
         BtnResp4.setText("Respuesta 4");
         BtnResp4.setFocusable(false);
         BtnResp4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        BtnResp4.setRolloverEnabled(false);
         BtnResp4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 BtnResp4MouseEntered(evt);
@@ -115,6 +112,8 @@ public class FrmQuestions extends javax.swing.JFrame {
             }
         });
 
+        gali.setText("jLabel1");
+
         javax.swing.GroupLayout PPrincipalLayout = new javax.swing.GroupLayout(PPrincipal);
         PPrincipal.setLayout(PPrincipalLayout);
         PPrincipalLayout.setHorizontalGroup(
@@ -129,7 +128,9 @@ public class FrmQuestions extends javax.swing.JFrame {
                     .addComponent(BtnResp4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PPrincipalLayout.createSequentialGroup()
-                .addGap(0, 309, Short.MAX_VALUE)
+                .addGap(26, 26, 26)
+                .addComponent(gali, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 190, Short.MAX_VALUE)
                 .addComponent(LblImagenPregunta)
                 .addGap(204, 204, 204)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -138,13 +139,19 @@ public class FrmQuestions extends javax.swing.JFrame {
         PPrincipalLayout.setVerticalGroup(
             PPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PPrincipalLayout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(PPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(LblImagenPregunta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(PPrincipalLayout.createSequentialGroup()
-                        .addComponent(jButton1)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addGap(18, 18, 18)
+                        .addContainerGap()
+                        .addGroup(PPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(LblImagenPregunta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(PPrincipalLayout.createSequentialGroup()
+                                .addComponent(jButton1)
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(18, 18, 18))
+                    .addGroup(PPrincipalLayout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(gali, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addComponent(LblPregunta)
                 .addGap(26, 26, 26)
                 .addComponent(BtnResp1)
@@ -165,7 +172,7 @@ public class FrmQuestions extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, 429, Short.MAX_VALUE)
+            .addComponent(PPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, 429, Short.MAX_VALUE)
         );
 
         pack();
@@ -219,6 +226,7 @@ public class FrmQuestions extends javax.swing.JFrame {
     public javax.swing.JLabel LblImagenPregunta;
     public javax.swing.JLabel LblPregunta;
     private javax.swing.JPanel PPrincipal;
+    public javax.swing.JLabel gali;
     public javax.swing.JButton jButton1;
     // End of variables declaration//GEN-END:variables
     private String help[] = {"Hola", "Si", "Probando", "Sonido", "1", "2", "3", "4", "prueba", "xd"};
