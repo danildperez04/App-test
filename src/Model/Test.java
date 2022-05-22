@@ -4,6 +4,10 @@ import java.util.ArrayList;
 
 public class Test {
 
+    public boolean isStatus() {
+        return status;
+    }
+    
     public ArrayList<Question> getQuestions() {
         return questions;
     }
@@ -16,6 +20,11 @@ public class Test {
         this.questions.add(question);
     }
     
+    public void setStatus(boolean status) {
+        this.status = status;
+    }
+    
     //Test Fields
     private ArrayList<Question> questions = new ArrayList<Question>();//Grupo de preguntas del test
+    private boolean status;
 }

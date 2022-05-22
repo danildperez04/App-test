@@ -1,21 +1,53 @@
 package Model;
 
-import static Controller.Encryption.encrypt;
-import java.security.GeneralSecurityException;
-import java.util.Scanner;
-import javax.crypto.spec.SecretKeySpec;
+import java.util.ArrayList;
 
 public class User {
-    
-    private static void passwordCrypted() throws GeneralSecurityException{
+    public User(){}
 
+    public String getNombre() {
+        return nombre;
     }
-    
-    public static void main(String[] args) {
-        
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public static String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public ArrayList<Test> getTests() {
+        return tests;
+    }
+
+    public void setTests(ArrayList<Test> tests) {
+        this.tests = tests;
     }
     
     private String nombre;
+    private String email;
     private static String password;
-    private static Scanner sc = new Scanner(System.in);
+    private int id;
+    private ArrayList<Test> tests;
 }
