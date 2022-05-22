@@ -46,7 +46,7 @@ public class FrmLogin extends javax.swing.JFrame {
         LblSingUp = new javax.swing.JLabel();
         LblSignUpUsername = new javax.swing.JLabel();
         TxtSignUpUsername = new javax.swing.JTextField();
-        LblSignUpEmail = new javax.swing.JLabel();
+        LblSignUpCarnet = new javax.swing.JLabel();
         BtnSingUp = new javax.swing.JButton();
         LblSignUpPassword = new javax.swing.JLabel();
         TxtSignUpPassword = new javax.swing.JPasswordField();
@@ -197,9 +197,9 @@ public class FrmLogin extends javax.swing.JFrame {
             }
         });
 
-        LblSignUpEmail.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
-        LblSignUpEmail.setForeground(new java.awt.Color(255, 255, 255));
-        LblSignUpEmail.setText("Carnet");
+        LblSignUpCarnet.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
+        LblSignUpCarnet.setForeground(new java.awt.Color(255, 255, 255));
+        LblSignUpCarnet.setText("Carnet");
 
         BtnSingUp.setBackground(new java.awt.Color(102, 255, 102));
         BtnSingUp.setText("SIGN UP");
@@ -244,7 +244,7 @@ public class FrmLogin extends javax.swing.JFrame {
                         .addGap(19, 19, 19)
                         .addGroup(PSignLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(LblSignUpPassword)
-                            .addComponent(LblSignUpEmail)
+                            .addComponent(LblSignUpCarnet)
                             .addComponent(LblSignUpUsername)
                             .addComponent(TxtSignUpUsername)
                             .addComponent(TxtSignUpPassword)
@@ -272,7 +272,7 @@ public class FrmLogin extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(TxtSignUpUsername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(LblSignUpEmail)
+                .addComponent(LblSignUpCarnet)
                 .addGap(18, 18, 18)
                 .addComponent(TxtSignUpCarnet, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -387,7 +387,7 @@ public class FrmLogin extends javax.swing.JFrame {
     private javax.swing.JLabel LblPhrase;
     private javax.swing.JLabel LblSignIn;
     private javax.swing.JLabel LblSignInImg;
-    private javax.swing.JLabel LblSignUpEmail;
+    private javax.swing.JLabel LblSignUpCarnet;
     private javax.swing.JLabel LblSignUpPassword;
     private javax.swing.JLabel LblSignUpUsername;
     private javax.swing.JLabel LblSingUp;

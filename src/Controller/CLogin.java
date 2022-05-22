@@ -39,6 +39,7 @@ public class CLogin {
         String carnet = view.TxtSignUpCarnet.getText();
         
         User user = new User(name, carnet, encryptedPassword, initTest());
+        FileStream.setNewUser(user);
     }
     
     public ArrayList<Test> initTest(){

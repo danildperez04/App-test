@@ -5,10 +5,9 @@ import java.util.ArrayList;
 public class User {
     public User(){}
 
-    public User(String nombre, String email, int id, ArrayList<Test> tests) {
+    public User(String nombre, String carnet,String password, ArrayList<Test> tests) {
         this.nombre = nombre;
-        this.email = email;
-        this.id = id;
+        this.carnet = carnet;
         this.tests = tests;
     }
     
@@ -28,20 +27,12 @@ public class User {
         this.password = password;
     }
 
-    public int getId() {
-        return id;
+    public String getCarnet() {
+        return carnet;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
+    public void setCarnet(String carnet) {
+        this.carnet = carnet;
     }
 
     public ArrayList<Test> getTests() {
@@ -53,8 +44,7 @@ public class User {
     }
     
     private String nombre;
-    private String email;
+    private String carnet;
     private static String password;
-    private int id;
     private ArrayList<Test> tests;
 }

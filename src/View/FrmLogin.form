@@ -356,7 +356,7 @@
                                   <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                       <Component id="LblSignUpPassword" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="LblSignUpEmail" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="LblSignUpCarnet" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="LblSignUpUsername" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="TxtSignUpUsername" alignment="0" max="32767" attributes="0"/>
                                       <Component id="TxtSignUpPassword" alignment="0" max="32767" attributes="0"/>
@@ -393,7 +393,7 @@
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="TxtSignUpUsername" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="LblSignUpEmail" min="-2" max="-2" attributes="0"/>
+                          <Component id="LblSignUpCarnet" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="TxtSignUpCarnet" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
@@ -443,7 +443,7 @@
                     <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
                   </AuxValues>
                 </Component>
-                <Component class="javax.swing.JLabel" name="LblSignUpEmail">
+                <Component class="javax.swing.JLabel" name="LblSignUpCarnet">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Arial Black" size="18" style="0"/>
