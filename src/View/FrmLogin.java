@@ -52,7 +52,7 @@ public class FrmLogin extends javax.swing.JFrame {
         TxtSignUpPassword = new javax.swing.JPasswordField();
         RbtnSignUpMale = new javax.swing.JRadioButton();
         RbtnSingUpFemale = new javax.swing.JRadioButton();
-        TxtSignUpEmail = new javax.swing.JTextField();
+        TxtSignUpCarnet = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(18, 31, 61));
@@ -199,7 +199,7 @@ public class FrmLogin extends javax.swing.JFrame {
 
         LblSignUpEmail.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
         LblSignUpEmail.setForeground(new java.awt.Color(255, 255, 255));
-        LblSignUpEmail.setText("Email");
+        LblSignUpEmail.setText("Carnet");
 
         BtnSingUp.setBackground(new java.awt.Color(102, 255, 102));
         BtnSingUp.setText("SIGN UP");
@@ -225,9 +225,9 @@ public class FrmLogin extends javax.swing.JFrame {
         RbtnSingUpFemale.setForeground(new java.awt.Color(255, 255, 255));
         RbtnSingUpFemale.setText("Female");
 
-        TxtSignUpEmail.addActionListener(new java.awt.event.ActionListener() {
+        TxtSignUpCarnet.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TxtSignUpEmailActionPerformed(evt);
+                TxtSignUpCarnetActionPerformed(evt);
             }
         });
 
@@ -248,7 +248,7 @@ public class FrmLogin extends javax.swing.JFrame {
                             .addComponent(LblSignUpUsername)
                             .addComponent(TxtSignUpUsername)
                             .addComponent(TxtSignUpPassword)
-                            .addComponent(TxtSignUpEmail, javax.swing.GroupLayout.DEFAULT_SIZE, 227, Short.MAX_VALUE))))
+                            .addComponent(TxtSignUpCarnet, javax.swing.GroupLayout.DEFAULT_SIZE, 227, Short.MAX_VALUE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PSignLayout.createSequentialGroup()
                 .addGap(0, 69, Short.MAX_VALUE)
@@ -274,7 +274,7 @@ public class FrmLogin extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(LblSignUpEmail)
                 .addGap(18, 18, 18)
-                .addComponent(TxtSignUpEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(TxtSignUpCarnet, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(LblSignUpPassword)
                 .addGap(18, 18, 18)
@@ -327,9 +327,9 @@ public class FrmLogin extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void TxtSignUpEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtSignUpEmailActionPerformed
+    private void TxtSignUpCarnetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtSignUpCarnetActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_TxtSignUpEmailActionPerformed
+    }//GEN-LAST:event_TxtSignUpCarnetActionPerformed
 
     private void BtnSingUpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSingUpActionPerformed
         // TODO add your handling code here:
@@ -401,9 +401,9 @@ public class FrmLogin extends javax.swing.JFrame {
     private javax.swing.JRadioButton RbtnSignUpMale;
     private javax.swing.JRadioButton RbtnSingUpFemale;
     public javax.swing.JPasswordField TxtPassword;
-    private javax.swing.JTextField TxtSignUpEmail;
-    private javax.swing.JPasswordField TxtSignUpPassword;
-    private javax.swing.JTextField TxtSignUpUsername;
+    public javax.swing.JTextField TxtSignUpCarnet;
+    public javax.swing.JPasswordField TxtSignUpPassword;
+    public javax.swing.JTextField TxtSignUpUsername;
     public javax.swing.JTextField TxtUsername;
     private javax.swing.ButtonGroup buttonGroup1;
     // End of variables declaration//GEN-END:variables

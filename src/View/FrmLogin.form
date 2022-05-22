@@ -360,7 +360,7 @@
                                       <Component id="LblSignUpUsername" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="TxtSignUpUsername" alignment="0" max="32767" attributes="0"/>
                                       <Component id="TxtSignUpPassword" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="TxtSignUpEmail" alignment="0" pref="227" max="32767" attributes="0"/>
+                                      <Component id="TxtSignUpCarnet" alignment="0" pref="227" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -395,7 +395,7 @@
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="LblSignUpEmail" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="TxtSignUpEmail" min="-2" max="-2" attributes="0"/>
+                          <Component id="TxtSignUpCarnet" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                           <Component id="LblSignUpPassword" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -439,6 +439,9 @@
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtSignUpUsernameActionPerformed"/>
                   </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
                 </Component>
                 <Component class="javax.swing.JLabel" name="LblSignUpEmail">
                   <Properties>
@@ -448,7 +451,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Email"/>
+                    <Property name="text" type="java.lang.String" value="Carnet"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JButton" name="BtnSingUp">
@@ -477,6 +480,9 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JPasswordField" name="TxtSignUpPassword">
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
                 </Component>
                 <Component class="javax.swing.JRadioButton" name="RbtnSignUpMale">
                   <Properties>
@@ -512,10 +518,13 @@
                     <Property name="text" type="java.lang.String" value="Female"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="TxtSignUpEmail">
+                <Component class="javax.swing.JTextField" name="TxtSignUpCarnet">
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtSignUpEmailActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtSignUpCarnetActionPerformed"/>
                   </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
                 </Component>
               </SubComponents>
             </Container>

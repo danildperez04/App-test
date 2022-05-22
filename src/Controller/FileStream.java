@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class FileStream {
     
-    public ArrayList<User> getUsers(){
+    public static ArrayList<User> getUsers(){
         try{
             ObjectInputStream archivo = new ObjectInputStream(new FileInputStream("users.out"));   
             users = (ArrayList<User>) archivo.readObject();
@@ -26,7 +26,7 @@ public class FileStream {
         }
     }
     
-    public void setNewUser(User user){
+    public static void setNewUser(User user){
         try{
             ObjectOutputStream archivo = new ObjectOutputStream(new FileOutputStream("users.out"));
             users.add(user);
@@ -42,5 +42,5 @@ public class FileStream {
         }
     }
     
-    ArrayList<User> users;
+    static ArrayList<User> users;
 }

@@ -7,11 +7,12 @@ public class Question {
     //Constructors
     public Question(){}
     
-    public Question(String questionLabel, String[] answers, String src, String correctAnswer) {
+    public Question(String questionLabel, String[] answers, String src, int idQuestion, String correctAnswer) {
         this.questionLabel = questionLabel;
         this.answers = answers;
         this.imageLabel = new ImageIcon(getClass().getResource(src));
         this.correctAnswer = correctAnswer;
+        this.idQuestion = idQuestion;
     }
     
     //Getters
@@ -55,6 +56,14 @@ public class Question {
     public void setCorrectAnswer(String correctAnswer) {
         this.correctAnswer = correctAnswer;
     }
+
+    public int getIdQuestion() {
+        return idQuestion;
+    }
+
+    public void setIdQuestion(int idQuestion) {
+        this.idQuestion = idQuestion;
+    }
     
     
     //User
@@ -69,4 +78,5 @@ public class Question {
     private boolean isCorrect;
     private Icon imageLabel;
     private String correctAnswer;
+    private int idQuestion;
 }

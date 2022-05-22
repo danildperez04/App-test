@@ -5,6 +5,13 @@ import java.util.ArrayList;
 public class User {
     public User(){}
 
+    public User(String nombre, String email, int id, ArrayList<Test> tests) {
+        this.nombre = nombre;
+        this.email = email;
+        this.id = id;
+        this.tests = tests;
+    }
+    
     public String getNombre() {
         return nombre;
     }
