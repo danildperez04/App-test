@@ -18,10 +18,6 @@ public class FrmLogin extends javax.swing.JFrame {
         initComponents();
     }
 
-    public FrmLogin(String sign_in) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -133,11 +129,6 @@ public class FrmLogin extends javax.swing.JFrame {
 
         BtnSignIn.setBackground(new java.awt.Color(102, 255, 102));
         BtnSignIn.setText("SIGN IN");
-        BtnSignIn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BtnSignInActionPerformed(evt);
-            }
-        });
 
         LblSignInImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/user (1).png"))); // NOI18N
 
@@ -348,10 +339,6 @@ public class FrmLogin extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_TxtSignUpUsernameActionPerformed
 
-    private void BtnSignInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSignInActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_BtnSignInActionPerformed
-
     private void TxtUsernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtUsernameActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TxtUsernameActionPerformed
@@ -393,8 +380,8 @@ public class FrmLogin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton BtnSignIn;
-    private javax.swing.JButton BtnSingUp;
+    public javax.swing.JButton BtnSignIn;
+    public javax.swing.JButton BtnSingUp;
     private javax.swing.JLabel LblBannerImg;
     private javax.swing.JLabel LblPassword;
     private javax.swing.JLabel LblPhrase;
@@ -407,17 +394,17 @@ public class FrmLogin extends javax.swing.JFrame {
     private javax.swing.JLabel LblSubPhrase;
     private javax.swing.JLabel LblUsername;
     private javax.swing.JPanel PBanner;
-    private javax.swing.JPanel PMain;
-    private javax.swing.JPanel PSign;
+    public javax.swing.JPanel PMain;
+    public javax.swing.JPanel PSign;
     private javax.swing.JPanel PSignIn;
-    private javax.swing.JTabbedPane PUserFeatures;
+    public javax.swing.JTabbedPane PUserFeatures;
     private javax.swing.JRadioButton RbtnSignUpMale;
     private javax.swing.JRadioButton RbtnSingUpFemale;
-    private javax.swing.JPasswordField TxtPassword;
+    public javax.swing.JPasswordField TxtPassword;
     private javax.swing.JTextField TxtSignUpEmail;
     private javax.swing.JPasswordField TxtSignUpPassword;
     private javax.swing.JTextField TxtSignUpUsername;
-    private javax.swing.JTextField TxtUsername;
+    public javax.swing.JTextField TxtUsername;
     private javax.swing.ButtonGroup buttonGroup1;
     // End of variables declaration//GEN-END:variables
 }

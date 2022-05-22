@@ -2,12 +2,15 @@ package Controller;
 
 import Model.Question;
 import Model.Test;
+import Model.User;
 import View.FrmLogin;
 import View.FrmQuestions;
 
 public class Main {
     public static void main(String[] args) {
         FrmLogin loginView = new FrmLogin();
+        User userModel = new User();
+        CLogin loginController = new CLogin(loginView, userModel);
         /*FrmQuestions frm = new FrmQuestions();
         Question model = new Question();
         Test englishTest = new Test();
