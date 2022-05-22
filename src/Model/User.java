@@ -1,6 +1,5 @@
 package Model;
 
-import static Controller.Encryption.encrypt;
 import java.security.GeneralSecurityException;
 import java.util.Scanner;
 import javax.crypto.spec.SecretKeySpec;
