@@ -4,6 +4,10 @@ import java.util.ArrayList;
 
 public class Test {
 
+    public boolean isStatus() {
+        return status;
+    }
+    
     public ArrayList<Question> getQuestions() {
         return questions;
     }
@@ -14,6 +18,10 @@ public class Test {
     
     public void addQuestion(Question question) {
         this.questions.add(question);
+    }
+    
+    public void setStatus(boolean status) {
+        this.status = status;
     }
     
     //Test Fields

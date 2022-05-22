@@ -7,14 +7,11 @@ public class Question {
     //Constructors
     public Question(){}
     
-    public Question(String questionLabel, String[] answers, String src, int indexQuestion, int indexCorrectAnswer) {
+    public Question(String questionLabel, String[] answers, String src, String correctAnswer) {
         this.questionLabel = questionLabel;
         this.answers = answers;
         this.imageLabel = new ImageIcon(getClass().getResource(src));
-        this.indexQuestion = indexQuestion;
-        this.indexCorrectAnswer = indexCorrectAnswer;
-        
-        
+        this.correctAnswer = correctAnswer;
     }
     
     //Getters
@@ -30,14 +27,14 @@ public class Question {
         return answers;
     }
     
-    public int getIndexQuestion() {
-        return indexQuestion;
+    public String getCorrectAnswer() {
+      return correctAnswer;
+    }  
+    
+    public boolean isIsCorrect() {
+        return isCorrect;
     }
     
-    public int getIndexCorrectAnswer() {
-        return indexCorrectAnswer;
-    }
-
     //Setters
     public void setQuestionLabel(String questionLabel) {
         this.questionLabel = questionLabel;
@@ -49,27 +46,27 @@ public class Question {
 
     public void setImageLabel(String src) {
         this.imageLabel = new ImageIcon(getClass().getResource(src));
+    }    
+
+    public void setIsCorrect(boolean isCorrect) {
+        this.isCorrect = isCorrect;
     }
 
-    public void setIndex(int indexQuestion) {
-        this.indexQuestion = indexQuestion;
+    public void setCorrectAnswer(String correctAnswer) {
+        this.correctAnswer = correctAnswer;
     }
     
-    public void setIndexCorrectAnswer(int indexCorrectAnswer) {
-        this.indexCorrectAnswer = indexCorrectAnswer;
-    }
     
     //User
     @Override
     public String toString(){
-        return "Question: " + questionLabel + "\nAnswers: " + answers.toString() + "\nImage: " + imageLabel.toString() + 
-                "Index: " + indexQuestion + "Index correct answer: " + indexCorrectAnswer; 
+        return "Question: " + questionLabel + "\nAnswers: " + answers.toString() + "\nImage: " + imageLabel.toString();
     }
     
     //Fields
     private String questionLabel;
     private String[] answers;
+    private boolean isCorrect;
     private Icon imageLabel;
-    private int indexQuestion;
-    private int indexCorrectAnswer;
+    private String correctAnswer;
 }

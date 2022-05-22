@@ -1,5 +1,7 @@
 package Model;
 
+import java.util.ArrayList;
+
 public class User {
     public User(){}
 
@@ -15,8 +17,8 @@ public class User {
         return password;
     }
 
-    public static void setPassword(String password) {
-        User.password = password;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public int getId() {
@@ -34,9 +36,18 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    public ArrayList<Test> getTests() {
+        return tests;
+    }
+
+    public void setTests(ArrayList<Test> tests) {
+        this.tests = tests;
+    }
     
     private String nombre;
     private String email;
     private static String password;
-    private int id; 
+    private int id;
+    private ArrayList<Test> tests;
 }
