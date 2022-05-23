@@ -37,17 +37,17 @@ public class FrmLogin extends javax.swing.JFrame {
         PSignIn = new javax.swing.JPanel();
         TxtPassword = new javax.swing.JPasswordField();
         LblSignIn = new javax.swing.JLabel();
-        LblUsername = new javax.swing.JLabel();
-        TxtUsername = new javax.swing.JTextField();
+        LblCarnet = new javax.swing.JLabel();
+        TxtCarnet = new javax.swing.JTextField();
         LblPassword = new javax.swing.JLabel();
         BtnSignIn = new javax.swing.JButton();
         LblSignInImg = new javax.swing.JLabel();
         PSign = new javax.swing.JPanel();
-        LblSingUp = new javax.swing.JLabel();
+        LblSignUp = new javax.swing.JLabel();
         LblSignUpUsername = new javax.swing.JLabel();
         TxtSignUpUsername = new javax.swing.JTextField();
         LblSignUpCarnet = new javax.swing.JLabel();
-        BtnSingUp = new javax.swing.JButton();
+        BtnSignUp = new javax.swing.JButton();
         LblSignUpPassword = new javax.swing.JLabel();
         TxtSignUpPassword = new javax.swing.JPasswordField();
         RbtnSignUpMale = new javax.swing.JRadioButton();
@@ -113,13 +113,13 @@ public class FrmLogin extends javax.swing.JFrame {
         LblSignIn.setForeground(new java.awt.Color(255, 255, 255));
         LblSignIn.setText("SIGN IN");
 
-        LblUsername.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
-        LblUsername.setForeground(new java.awt.Color(255, 255, 255));
-        LblUsername.setText("Username");
+        LblCarnet.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
+        LblCarnet.setForeground(new java.awt.Color(255, 255, 255));
+        LblCarnet.setText("Carnet");
 
-        TxtUsername.addActionListener(new java.awt.event.ActionListener() {
+        TxtCarnet.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TxtUsernameActionPerformed(evt);
+                TxtCarnetActionPerformed(evt);
             }
         });
 
@@ -141,9 +141,9 @@ public class FrmLogin extends javax.swing.JFrame {
                     .addGroup(PSignInLayout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addGroup(PSignInLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(TxtUsername, javax.swing.GroupLayout.DEFAULT_SIZE, 236, Short.MAX_VALUE)
+                            .addComponent(TxtCarnet, javax.swing.GroupLayout.DEFAULT_SIZE, 236, Short.MAX_VALUE)
                             .addComponent(TxtPassword, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(LblUsername)
+                            .addComponent(LblCarnet)
                             .addComponent(LblPassword)))
                     .addGroup(PSignInLayout.createSequentialGroup()
                         .addGap(97, 97, 97)
@@ -166,9 +166,9 @@ public class FrmLogin extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(LblSignInImg)
                 .addGap(39, 39, 39)
-                .addComponent(LblUsername)
+                .addComponent(LblCarnet)
                 .addGap(18, 18, 18)
-                .addComponent(TxtUsername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(TxtCarnet, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(LblPassword)
                 .addGap(18, 18, 18)
@@ -183,9 +183,9 @@ public class FrmLogin extends javax.swing.JFrame {
         PSign.setBackground(new java.awt.Color(18, 31, 61));
         PSign.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
 
-        LblSingUp.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
-        LblSingUp.setForeground(new java.awt.Color(255, 255, 255));
-        LblSingUp.setText("SIGN UP");
+        LblSignUp.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
+        LblSignUp.setForeground(new java.awt.Color(255, 255, 255));
+        LblSignUp.setText("SIGN UP");
 
         LblSignUpUsername.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
         LblSignUpUsername.setForeground(new java.awt.Color(255, 255, 255));
@@ -201,11 +201,11 @@ public class FrmLogin extends javax.swing.JFrame {
         LblSignUpCarnet.setForeground(new java.awt.Color(255, 255, 255));
         LblSignUpCarnet.setText("Carnet");
 
-        BtnSingUp.setBackground(new java.awt.Color(102, 255, 102));
-        BtnSingUp.setText("SIGN UP");
-        BtnSingUp.addActionListener(new java.awt.event.ActionListener() {
+        BtnSignUp.setBackground(new java.awt.Color(102, 255, 102));
+        BtnSignUp.setText("SIGN UP");
+        BtnSignUp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BtnSingUpActionPerformed(evt);
+                BtnSignUpActionPerformed(evt);
             }
         });
 
@@ -239,7 +239,7 @@ public class FrmLogin extends javax.swing.JFrame {
                 .addGroup(PSignLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(PSignLayout.createSequentialGroup()
                         .addGap(97, 97, 97)
-                        .addComponent(LblSingUp))
+                        .addComponent(LblSignUp))
                     .addGroup(PSignLayout.createSequentialGroup()
                         .addGap(19, 19, 19)
                         .addGroup(PSignLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -254,7 +254,7 @@ public class FrmLogin extends javax.swing.JFrame {
                 .addGap(0, 69, Short.MAX_VALUE)
                 .addGroup(PSignLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PSignLayout.createSequentialGroup()
-                        .addComponent(BtnSingUp, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(BtnSignUp, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(64, 64, 64))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PSignLayout.createSequentialGroup()
                         .addComponent(RbtnSingUpFemale)
@@ -266,7 +266,7 @@ public class FrmLogin extends javax.swing.JFrame {
             PSignLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PSignLayout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addComponent(LblSingUp, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(LblSignUp, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(LblSignUpUsername)
                 .addGap(18, 18, 18)
@@ -284,7 +284,7 @@ public class FrmLogin extends javax.swing.JFrame {
                     .addComponent(RbtnSignUpMale)
                     .addComponent(RbtnSingUpFemale))
                 .addGap(27, 27, 27)
-                .addComponent(BtnSingUp, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(BtnSignUp, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(70, Short.MAX_VALUE))
         );
 
@@ -331,17 +331,17 @@ public class FrmLogin extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_TxtSignUpCarnetActionPerformed
 
-    private void BtnSingUpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSingUpActionPerformed
+    private void BtnSignUpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSignUpActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_BtnSingUpActionPerformed
+    }//GEN-LAST:event_BtnSignUpActionPerformed
 
     private void TxtSignUpUsernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtSignUpUsernameActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TxtSignUpUsernameActionPerformed
 
-    private void TxtUsernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtUsernameActionPerformed
+    private void TxtCarnetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtCarnetActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_TxtUsernameActionPerformed
+    }//GEN-LAST:event_TxtCarnetActionPerformed
 
     /**
      * @param args the command line arguments
@@ -381,18 +381,18 @@ public class FrmLogin extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton BtnSignIn;
-    public javax.swing.JButton BtnSingUp;
+    public javax.swing.JButton BtnSignUp;
     private javax.swing.JLabel LblBannerImg;
+    private javax.swing.JLabel LblCarnet;
     private javax.swing.JLabel LblPassword;
     private javax.swing.JLabel LblPhrase;
     private javax.swing.JLabel LblSignIn;
     private javax.swing.JLabel LblSignInImg;
+    private javax.swing.JLabel LblSignUp;
     private javax.swing.JLabel LblSignUpCarnet;
     private javax.swing.JLabel LblSignUpPassword;
     private javax.swing.JLabel LblSignUpUsername;
-    private javax.swing.JLabel LblSingUp;
     private javax.swing.JLabel LblSubPhrase;
-    private javax.swing.JLabel LblUsername;
     private javax.swing.JPanel PBanner;
     public javax.swing.JPanel PMain;
     public javax.swing.JPanel PSign;
@@ -400,11 +400,11 @@ public class FrmLogin extends javax.swing.JFrame {
     public javax.swing.JTabbedPane PUserFeatures;
     private javax.swing.JRadioButton RbtnSignUpMale;
     private javax.swing.JRadioButton RbtnSingUpFemale;
+    public javax.swing.JTextField TxtCarnet;
     public javax.swing.JPasswordField TxtPassword;
     public javax.swing.JTextField TxtSignUpCarnet;
     public javax.swing.JPasswordField TxtSignUpPassword;
     public javax.swing.JTextField TxtSignUpUsername;
-    public javax.swing.JTextField TxtUsername;
     private javax.swing.ButtonGroup buttonGroup1;
     // End of variables declaration//GEN-END:variables
 }

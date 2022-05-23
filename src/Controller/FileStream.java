@@ -8,13 +8,14 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class FileStream {
     
-    public static ArrayList<User> getUsers(){
+    public static HashMap<String, User> getUsers(){
         try{
             ObjectInputStream archivo = new ObjectInputStream(new FileInputStream("users.out"));   
-            users = (ArrayList<User>) archivo.readObject();
+            users = (HashMap<String, User>) archivo.readObject();
          
             return users;
         }catch(IOException e){
@@ -29,18 +30,20 @@ public class FileStream {
     public static void setNewUser(User user){
         try{
             ObjectOutputStream archivo = new ObjectOutputStream(new FileOutputStream("users.out"));
-            users.add(user);
+            users.put(user.getCarnet(), user);
             
             archivo.writeObject(users);
             
             archivo.close();
+            
+            System.out.println("SE CREO EL ARCHIVO");
         }catch(FileNotFoundException e){
             System.out.println("Ha ocurrido un error! \nNo hemos encontrado la ruta del archivo especificado");
         }
         catch(IOException io){
-            System.out.println("Ha ocurrido un error! \nLa ejecucion del programa ha sido interrumpida");
+            System.out.println("Ha ocurrido un error! \nLa ejecucion del programa ha sido interrumpida\n"+io.toString());
         }
     }
     
-    static ArrayList<User> users;
+    static HashMap<String, User> users = new HashMap<>();
 }

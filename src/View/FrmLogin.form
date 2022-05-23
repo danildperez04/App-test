@@ -204,9 +204,9 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="TxtUsername" pref="236" max="32767" attributes="0"/>
+                                      <Component id="TxtCarnet" pref="236" max="32767" attributes="0"/>
                                       <Component id="TxtPassword" alignment="1" max="32767" attributes="0"/>
-                                      <Component id="LblUsername" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="LblCarnet" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="LblPassword" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -238,9 +238,9 @@
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="LblSignInImg" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
-                          <Component id="LblUsername" min="-2" max="-2" attributes="0"/>
+                          <Component id="LblCarnet" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="TxtUsername" min="-2" max="-2" attributes="0"/>
+                          <Component id="TxtCarnet" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="LblPassword" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -269,7 +269,7 @@
                     <Property name="text" type="java.lang.String" value="SIGN IN"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="LblUsername">
+                <Component class="javax.swing.JLabel" name="LblCarnet">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Arial Black" size="18" style="0"/>
@@ -277,12 +277,12 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Username"/>
+                    <Property name="text" type="java.lang.String" value="Carnet"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="TxtUsername">
+                <Component class="javax.swing.JTextField" name="TxtCarnet">
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtUsernameActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtCarnetActionPerformed"/>
                   </Events>
                   <AuxValues>
                     <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
@@ -350,7 +350,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="97" max="-2" attributes="0"/>
-                                  <Component id="LblSingUp" min="-2" max="-2" attributes="0"/>
+                                  <Component id="LblSignUp" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
@@ -370,7 +370,7 @@
                           <EmptySpace min="0" pref="69" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
-                                  <Component id="BtnSingUp" min="-2" pref="136" max="-2" attributes="0"/>
+                                  <Component id="BtnSignUp" min="-2" pref="136" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
@@ -387,7 +387,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                          <Component id="LblSingUp" min="-2" pref="31" max="-2" attributes="0"/>
+                          <Component id="LblSignUp" min="-2" pref="31" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="LblSignUpUsername" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -406,14 +406,14 @@
                               <Component id="RbtnSingUpFemale" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                          <Component id="BtnSingUp" min="-2" pref="39" max="-2" attributes="0"/>
+                          <Component id="BtnSignUp" min="-2" pref="39" max="-2" attributes="0"/>
                           <EmptySpace pref="70" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JLabel" name="LblSingUp">
+                <Component class="javax.swing.JLabel" name="LblSignUp">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Arial Black" size="18" style="0"/>
@@ -454,7 +454,7 @@
                     <Property name="text" type="java.lang.String" value="Carnet"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JButton" name="BtnSingUp">
+                <Component class="javax.swing.JButton" name="BtnSignUp">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="66" green="ff" red="66" type="rgb"/>
@@ -462,7 +462,7 @@
                     <Property name="text" type="java.lang.String" value="SIGN UP"/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnSingUpActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnSignUpActionPerformed"/>
                   </Events>
                   <AuxValues>
                     <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>

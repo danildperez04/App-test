@@ -1,25 +1,27 @@
 package Model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class User {
+public class User implements Serializable{
     public User(){}
 
-    public User(String nombre, String carnet,String password, ArrayList<Test> tests) {
-        this.nombre = nombre;
+    public User(String name, String carnet,String password, ArrayList<Test> tests) {
+        this.name = name;
         this.carnet = carnet;
+        this.password = password;
         this.tests = tests;
     }
     
-    public String getNombre() {
-        return nombre;
+    public String getName() {
+        return name;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public static String getPassword() {
+    public String getPassword() {
         return password;
     }
 
@@ -43,8 +45,8 @@ public class User {
         this.tests = tests;
     }
     
-    private String nombre;
+    private String name;
     private String carnet;
-    private static String password;
+    private String password;
     private ArrayList<Test> tests;
 }

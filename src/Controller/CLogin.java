@@ -7,6 +7,8 @@ import View.FrmMenu;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import java.util.HashMap;
+import javax.swing.JOptionPane;
 
 public class CLogin {
     public CLogin(FrmLogin view, User model){
@@ -19,18 +21,37 @@ public class CLogin {
     public void initButtons(){
         view.BtnSignIn.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent evt){
-                FrmMenu menuView = new FrmMenu();
-                menuView.setVisible(true);
-                validateLogin();
-                view.dispose();
+                if(validateLogin()){
+                    FrmMenu menuView = new FrmMenu();
+                    menuView.setVisible(true);
+                
+                    view.dispose();
+                }
+                else{
+                    JOptionPane.showMessageDialog(null, "SU CONTRASEÑA, CARNET O NOMBRE DE USUARIO SON INCORRECTOS, POR FAVOR INGRESE CORRECTAMENTE SUS DATOS PARA CONTINUAR", "SIGN IN", 2);
+                }
+            }
+        });
+        
+        view.BtnSignUp.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent evt){
+                validateSingup();
             }
         });
     }
     
-    public void validateLogin(){
+    public boolean validateLogin(){
         String encryptedPassword = Encryption.encryptThisString(view.TxtPassword.getText());
-        String name = view.TxtSignUpUsername.getText();
-        String carnet = view.TxtSignUpCarnet.getText();
+        String carnet = view.TxtCarnet.getText();
+        users = FileStream.getUsers();
+        if(users != null){
+            User user = users.get(carnet);
+            System.out.println(user.toString());
+            if(user.getPassword().equals(encryptedPassword)){
+                return true;
+            }
+        }
+        return false;
     }
     
     public void validateSingup(){
@@ -57,5 +78,5 @@ public class CLogin {
     
     FrmLogin view;
     User model;
-    private ArrayList<User> users;
+    private HashMap<String, User> users = new HashMap<>();
 }
