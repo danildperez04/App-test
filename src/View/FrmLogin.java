@@ -392,8 +392,8 @@ public class FrmLogin extends javax.swing.JFrame {
     public javax.swing.JPanel PSign;
     private javax.swing.JPanel PSignIn;
     public javax.swing.JTabbedPane PUserFeatures;
-    private javax.swing.JRadioButton RbtnSignUpFemale;
-    private javax.swing.JRadioButton RbtnSignUpMale;
+    public javax.swing.JRadioButton RbtnSignUpFemale;
+    public javax.swing.JRadioButton RbtnSignUpMale;
     public javax.swing.JPasswordField TxtPassword;
     public javax.swing.JPasswordField TxtSignUpPassword;
     public javax.swing.JTextField TxtSignUpUsername;

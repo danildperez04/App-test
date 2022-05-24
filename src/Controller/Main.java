@@ -13,7 +13,7 @@ public class Main {
         FrmLogin loginView = new FrmLogin();
         User userModel = new User();
         CLogin loginController = new CLogin(loginView, userModel);
-        FrmQuestions frm = new FrmQuestions();
+        /*FrmQuestions frm = new FrmQuestions();
         Question model = new Question();
         Test englishTest = new Test();
         englishTest.addQuestion(new Question("Cual es la pregunta1", new String[]{"Nada1", "Si hay1", "no1", "Ya1"}, "/Imagenes/pregunta (1).png", 0, ""));
@@ -28,7 +28,7 @@ public class Main {
         englishTest.addQuestion(new Question("Cual es la pregunta10", new String[]{"Nada10", "Si hay10", "no10", "Ya10"}, "/Imagenes/reino-unido.png", 9, ""));
         CQuestions cQuestions = new CQuestions(frm, model, englishTest);
         frm.setVisible(true);
-
+        */
         loginView.setVisible(true);
     }
 }

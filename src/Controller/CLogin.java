@@ -1,5 +1,6 @@
 package Controller;
 
+import Model.IComponentsHandler;
 import Model.Test;
 import Model.User;
 import View.FrmLogin;
@@ -10,7 +11,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import javax.swing.JOptionPane;
 
-public class CLogin {
+public class CLogin implements IComponentsHandler{
     public CLogin(FrmLogin view, User model){
         this.view = view;
         this.model = model;
@@ -30,12 +31,14 @@ public class CLogin {
                 else{
                     JOptionPane.showMessageDialog(null, "SU CONTRASEÑA, CARNET O NOMBRE DE USUARIO SON INCORRECTOS, POR FAVOR INGRESE CORRECTAMENTE SUS DATOS PARA CONTINUAR", "SIGN IN", 2);
                 }
+                clearFields();
             }
         });
         
         view.BtnSignUp.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent evt){
                 validateSingup();
+                clearFields();
             }
         });
     }
@@ -44,23 +47,52 @@ public class CLogin {
         String encryptedPassword = Encryption.encryptThisString(view.TxtPassword.getText());
         String carnet = view.FtxtSignInCarnet.getText();
         users = FileStream.getUsers();
-        if(users != null){
-            User user = users.get(carnet);
-            System.out.println(user.toString());
-            if(user.getPassword().equals(encryptedPassword)){
+        
+        if(users != null && users.get(carnet) != null){
+            if(users.get(carnet).getPassword().equals(encryptedPassword)){
                 return true;
             }
         }
+        
         return false;
     }
     
     public void validateSingup(){
-        String encryptedPassword = Encryption.encryptThisString(view.TxtSignUpPassword.getText());
-        String name = view.TxtSignUpUsername.getText();
-        String carnet = view.FtxtSignUpCarnet.getText();
         
-        User user = new User(name, carnet, encryptedPassword, initTest());
-        FileStream.setNewUser(user);
+        String password = passwordProcessing(view.TxtSignUpPassword.getText());
+        String name = view.TxtSignUpUsername.getText().trim();
+        String carnet = view.FtxtSignUpCarnet.getText().trim();
+        
+        if(!(name.equals("") && password.equals("") && carnet.equals("-"))){
+            User user = new User(name, carnet, password, initTest());
+            FileStream.setNewUser(user);
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "POR FAVOR RELLENE TODOS LOS CAMPOS", "LOG IN", 2);
+        }
+        
+    }
+    
+    public String passwordProcessing(String password){
+        if(password.length() >= 8){
+            return Encryption.encryptThisString(password);
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "SU CONTRASEÑA DEBE TENER POR LO MENOS 8 CARACTERES", "PASSWORD", 2);
+        }
+        return "";
+    }
+    
+    @Override
+    public void clearFields() {
+        view.FtxtSignInCarnet.setText("");
+        view.TxtPassword.setText("");
+        
+        view.FtxtSignUpCarnet.setText("");
+        view.TxtSignUpUsername.setText("");
+        view.TxtSignUpPassword.setText("");
+        
+        
     }
     
     public ArrayList<Test> initTest(){
