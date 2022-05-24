@@ -42,7 +42,7 @@ public class CLogin {
     
     public boolean validateLogin(){
         String encryptedPassword = Encryption.encryptThisString(view.TxtPassword.getText());
-        String carnet = view.TxtCarnet.getText();
+        String carnet = view.FtxtSignInCarnet.getText();
         users = FileStream.getUsers();
         if(users != null){
             User user = users.get(carnet);
@@ -57,7 +57,7 @@ public class CLogin {
     public void validateSingup(){
         String encryptedPassword = Encryption.encryptThisString(view.TxtSignUpPassword.getText());
         String name = view.TxtSignUpUsername.getText();
-        String carnet = view.TxtSignUpCarnet.getText();
+        String carnet = view.FtxtSignUpCarnet.getText();
         
         User user = new User(name, carnet, encryptedPassword, initTest());
         FileStream.setNewUser(user);

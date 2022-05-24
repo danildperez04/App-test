@@ -203,11 +203,11 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="TxtCarnet" pref="236" max="32767" attributes="0"/>
-                                      <Component id="TxtPassword" alignment="1" max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="TxtPassword" alignment="1" min="-2" pref="236" max="-2" attributes="0"/>
                                       <Component id="LblCarnet" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="LblPassword" min="-2" max="-2" attributes="0"/>
+                                      <Component id="FtxtSignInCarnet" alignment="0" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
@@ -240,8 +240,8 @@
                           <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                           <Component id="LblCarnet" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="TxtCarnet" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="FtxtSignInCarnet" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                           <Component id="LblPassword" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="TxtPassword" min="-2" max="-2" attributes="0"/>
@@ -280,14 +280,6 @@
                     <Property name="text" type="java.lang.String" value="Carnet"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="TxtCarnet">
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtCarnetActionPerformed"/>
-                  </Events>
-                  <AuxValues>
-                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
-                  </AuxValues>
-                </Component>
                 <Component class="javax.swing.JLabel" name="LblPassword">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -316,6 +308,16 @@
                       <Image iconType="3" name="/Imagenes/user (1).png"/>
                     </Property>
                   </Properties>
+                </Component>
+                <Component class="javax.swing.JFormattedTextField" name="FtxtSignInCarnet">
+                  <Properties>
+                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+                      <Format format="####-####U" subtype="-1" type="5"/>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
                 </Component>
               </SubComponents>
             </Container>
@@ -358,9 +360,9 @@
                                       <Component id="LblSignUpPassword" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="LblSignUpCarnet" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="LblSignUpUsername" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="TxtSignUpUsername" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="TxtSignUpUsername" alignment="0" pref="227" max="32767" attributes="0"/>
                                       <Component id="TxtSignUpPassword" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="TxtSignUpCarnet" alignment="0" pref="227" max="32767" attributes="0"/>
+                                      <Component id="FtxtSignUpCarnet" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -374,7 +376,7 @@
                                   <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
-                                  <Component id="RbtnSingUpFemale" min="-2" max="-2" attributes="0"/>
+                                  <Component id="RbtnSignUpFemale" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                                   <Component id="RbtnSignUpMale" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
@@ -394,16 +396,16 @@
                           <Component id="TxtSignUpUsername" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="LblSignUpCarnet" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="TxtSignUpCarnet" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                          <Component id="FtxtSignUpCarnet" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="LblSignUpPassword" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="TxtSignUpPassword" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="RbtnSignUpMale" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="RbtnSingUpFemale" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="RbtnSignUpFemale" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                           <Component id="BtnSignUp" min="-2" pref="39" max="-2" attributes="0"/>
@@ -501,7 +503,7 @@
                     <Property name="text" type="java.lang.String" value="Male"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JRadioButton" name="RbtnSingUpFemale">
+                <Component class="javax.swing.JRadioButton" name="RbtnSignUpFemale">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="3d" green="1f" red="12" type="rgb"/>
@@ -518,10 +520,12 @@
                     <Property name="text" type="java.lang.String" value="Female"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="TxtSignUpCarnet">
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtSignUpCarnetActionPerformed"/>
-                  </Events>
+                <Component class="javax.swing.JFormattedTextField" name="FtxtSignUpCarnet">
+                  <Properties>
+                    <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+                      <Format format="####-####U" subtype="-1" type="5"/>
+                    </Property>
+                  </Properties>
                   <AuxValues>
                     <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
                   </AuxValues>
