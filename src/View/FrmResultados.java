@@ -32,65 +32,69 @@ public class FrmResultados extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel2 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        Title = new javax.swing.JLabel();
+        Score = new javax.swing.JLabel();
+        Paragraph = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
+        Question1 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        jLabel6 = new javax.swing.JLabel();
+        Question2 = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
-        jLabel7 = new javax.swing.JLabel();
+        Question3 = new javax.swing.JLabel();
         jSeparator4 = new javax.swing.JSeparator();
-        jLabel8 = new javax.swing.JLabel();
+        Question4 = new javax.swing.JLabel();
         jSeparator5 = new javax.swing.JSeparator();
-        jLabel9 = new javax.swing.JLabel();
+        Question5 = new javax.swing.JLabel();
         jSeparator6 = new javax.swing.JSeparator();
-        jLabel10 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        Question6 = new javax.swing.JLabel();
+        Button1 = new javax.swing.JButton();
+        Button2 = new javax.swing.JButton();
+        Button3 = new javax.swing.JButton();
+        Button4 = new javax.swing.JButton();
+        Button5 = new javax.swing.JButton();
+        Button6 = new javax.swing.JButton();
         jSeparator7 = new javax.swing.JSeparator();
-        jLabel11 = new javax.swing.JLabel();
+        Question7 = new javax.swing.JLabel();
         jSeparator8 = new javax.swing.JSeparator();
-        jLabel12 = new javax.swing.JLabel();
+        Question8 = new javax.swing.JLabel();
         jSeparator9 = new javax.swing.JSeparator();
-        jLabel13 = new javax.swing.JLabel();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
+        Question9 = new javax.swing.JLabel();
+        Button7 = new javax.swing.JButton();
+        Button8 = new javax.swing.JButton();
+        Button9 = new javax.swing.JButton();
         jSeparator10 = new javax.swing.JSeparator();
-        jLabel14 = new javax.swing.JLabel();
-        jButton10 = new javax.swing.JButton();
+        Question10 = new javax.swing.JLabel();
+        Button10 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Test Ingles Pregunta #");
+        setPreferredSize(new java.awt.Dimension(720, 805));
         setResizable(false);
 
         jPanel2.setBackground(new java.awt.Color(12, 21, 50));
         jPanel2.setForeground(new java.awt.Color(0, 0, 153));
+        jPanel2.setMinimumSize(new java.awt.Dimension(720, 150));
+        jPanel2.setName(""); // NOI18N
+        jPanel2.setPreferredSize(new java.awt.Dimension(720, 150));
 
-        jLabel1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel1.setText("Neque porro quisquam ");
+        Title.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        Title.setForeground(new java.awt.Color(255, 255, 255));
+        Title.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        Title.setText("Tus Resultados!");
 
-        jLabel4.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("0   |   0/12");
+        Score.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        Score.setForeground(new java.awt.Color(255, 255, 255));
+        Score.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Score.setText("0   |   0/12");
 
-        jLabel5.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel5.setText("<html>Quisque nec ultricies tortor, nec aliquam leoa eleifend velit mollis. Sed a ultrices neque. Quisque at nulla pretium, pellentesque orci sed</html>");
-        jLabel5.setToolTipText("");
-        jLabel5.setAutoscrolls(true);
+        Paragraph.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        Paragraph.setForeground(new java.awt.Color(255, 255, 255));
+        Paragraph.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        Paragraph.setText("<html>Acá podrás ver tus resultados de cada una de las preguntas de tu examen, y adémas poder repasar cada uno de los temas</html>");
+        Paragraph.setToolTipText("");
+        Paragraph.setAutoscrolls(true);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -99,218 +103,224 @@ public class FrmResultados extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 449, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Title, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Paragraph, javax.swing.GroupLayout.PREFERRED_SIZE, 449, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
+                .addComponent(Score, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(44, 44, 44))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(30, 30, 30)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Title, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addComponent(Paragraph, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(21, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Score, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(46, 46, 46))
         );
 
         getContentPane().add(jPanel2, java.awt.BorderLayout.PAGE_START);
 
+        jScrollPane1.setMinimumSize(new java.awt.Dimension(720, 279));
+        jScrollPane1.setPreferredSize(new java.awt.Dimension(720, 279));
+        jScrollPane1.setRequestFocusEnabled(false);
+
         jPanel1.setBackground(new java.awt.Color(18, 32, 61));
+        jPanel1.setPreferredSize(new java.awt.Dimension(700, 643));
 
-        jLabel3.setBackground(new java.awt.Color(255, 51, 102));
-        jLabel3.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel3.setText("1. Maecenas in lacus mauris. Morbi mattis sed urna a malesuada?");
-        jLabel3.setToolTipText("");
-        jLabel3.setAutoscrolls(true);
-        jLabel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(138, 44, 63), 2, true));
+        Question1.setBackground(new java.awt.Color(255, 51, 102));
+        Question1.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        Question1.setForeground(new java.awt.Color(255, 255, 255));
+        Question1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        Question1.setText("1. Maecenas in lacus mauris. Morbi mattis sed urna a malesuada?");
+        Question1.setToolTipText("");
+        Question1.setAutoscrolls(true);
+        Question1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(138, 44, 63), 2, true));
 
-        jLabel6.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel6.setText("2. Maecenas in lacus mauris. Morbi mattis sed urna a malesuada?");
-        jLabel6.setToolTipText("");
-        jLabel6.setAutoscrolls(true);
-        jLabel6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(37, 105, 37), 2, true));
+        Question2.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        Question2.setForeground(new java.awt.Color(255, 255, 255));
+        Question2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        Question2.setText("2. Maecenas in lacus mauris. Morbi mattis sed urna a malesuada?");
+        Question2.setToolTipText("");
+        Question2.setAutoscrolls(true);
+        Question2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(37, 105, 37), 2, true));
 
-        jLabel7.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel7.setText("3. Maecenas in lacus mauris. Morbi mattis sed urna a malesuada?");
-        jLabel7.setToolTipText("");
-        jLabel7.setAutoscrolls(true);
-        jLabel7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(37, 105, 37), 2, true));
+        Question3.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        Question3.setForeground(new java.awt.Color(255, 255, 255));
+        Question3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        Question3.setText("3. Maecenas in lacus mauris. Morbi mattis sed urna a malesuada?");
+        Question3.setToolTipText("");
+        Question3.setAutoscrolls(true);
+        Question3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(37, 105, 37), 2, true));
 
-        jLabel8.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel8.setText("4. Maecenas in lacus mauris. Morbi mattis sed urna a malesuada?");
-        jLabel8.setToolTipText("");
-        jLabel8.setAutoscrolls(true);
-        jLabel8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(138, 44, 63), 2, true));
+        Question4.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        Question4.setForeground(new java.awt.Color(255, 255, 255));
+        Question4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        Question4.setText("4. Maecenas in lacus mauris. Morbi mattis sed urna a malesuada?");
+        Question4.setToolTipText("");
+        Question4.setAutoscrolls(true);
+        Question4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(138, 44, 63), 2, true));
 
-        jLabel9.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel9.setText("5. Maecenas in lacus mauris. Morbi mattis sed urna a malesuada?");
-        jLabel9.setToolTipText("");
-        jLabel9.setAutoscrolls(true);
-        jLabel9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(37, 105, 37), 2, true));
+        Question5.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        Question5.setForeground(new java.awt.Color(255, 255, 255));
+        Question5.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        Question5.setText("5. Maecenas in lacus mauris. Morbi mattis sed urna a malesuada?");
+        Question5.setToolTipText("");
+        Question5.setAutoscrolls(true);
+        Question5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(37, 105, 37), 2, true));
 
-        jLabel10.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel10.setText("6. Maecenas in lacus mauris. Morbi mattis sed urna a malesuada?");
-        jLabel10.setToolTipText("");
-        jLabel10.setAutoscrolls(true);
-        jLabel10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(37, 105, 37), 2, true));
+        Question6.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        Question6.setForeground(new java.awt.Color(255, 255, 255));
+        Question6.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        Question6.setText("6. Maecenas in lacus mauris. Morbi mattis sed urna a malesuada?");
+        Question6.setToolTipText("");
+        Question6.setAutoscrolls(true);
+        Question6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(37, 105, 37), 2, true));
 
-        jButton1.setBackground(new java.awt.Color(0, 102, 255));
-        jButton1.setFont(new java.awt.Font("Cascadia Code", 1, 12)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("REPASAR AQUI");
-        jButton1.setPreferredSize(new java.awt.Dimension(134, 24));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        Button1.setBackground(new java.awt.Color(0, 102, 255));
+        Button1.setFont(new java.awt.Font("Cascadia Code", 1, 12)); // NOI18N
+        Button1.setForeground(new java.awt.Color(255, 255, 255));
+        Button1.setText("REPASAR AQUI");
+        Button1.setPreferredSize(new java.awt.Dimension(134, 24));
+        Button1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                Button1ActionPerformed(evt);
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(0, 102, 255));
-        jButton2.setFont(new java.awt.Font("Cascadia Code", 1, 12)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("REPASAR AQUI");
-        jButton2.setPreferredSize(new java.awt.Dimension(134, 24));
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        Button2.setBackground(new java.awt.Color(0, 102, 255));
+        Button2.setFont(new java.awt.Font("Cascadia Code", 1, 12)); // NOI18N
+        Button2.setForeground(new java.awt.Color(255, 255, 255));
+        Button2.setText("REPASAR AQUI");
+        Button2.setPreferredSize(new java.awt.Dimension(134, 24));
+        Button2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                Button2ActionPerformed(evt);
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(0, 102, 255));
-        jButton3.setFont(new java.awt.Font("Cascadia Code", 1, 12)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("REPASAR AQUI");
-        jButton3.setPreferredSize(new java.awt.Dimension(134, 24));
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        Button3.setBackground(new java.awt.Color(0, 102, 255));
+        Button3.setFont(new java.awt.Font("Cascadia Code", 1, 12)); // NOI18N
+        Button3.setForeground(new java.awt.Color(255, 255, 255));
+        Button3.setText("REPASAR AQUI");
+        Button3.setPreferredSize(new java.awt.Dimension(134, 24));
+        Button3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                Button3ActionPerformed(evt);
             }
         });
 
-        jButton4.setBackground(new java.awt.Color(0, 102, 255));
-        jButton4.setFont(new java.awt.Font("Cascadia Code", 1, 12)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("REPASAR AQUI");
-        jButton4.setPreferredSize(new java.awt.Dimension(134, 24));
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        Button4.setBackground(new java.awt.Color(0, 102, 255));
+        Button4.setFont(new java.awt.Font("Cascadia Code", 1, 12)); // NOI18N
+        Button4.setForeground(new java.awt.Color(255, 255, 255));
+        Button4.setText("REPASAR AQUI");
+        Button4.setPreferredSize(new java.awt.Dimension(134, 24));
+        Button4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                Button4ActionPerformed(evt);
             }
         });
 
-        jButton5.setBackground(new java.awt.Color(0, 102, 255));
-        jButton5.setFont(new java.awt.Font("Cascadia Code", 1, 12)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("REPASAR AQUI");
-        jButton5.setPreferredSize(new java.awt.Dimension(134, 24));
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        Button5.setBackground(new java.awt.Color(0, 102, 255));
+        Button5.setFont(new java.awt.Font("Cascadia Code", 1, 12)); // NOI18N
+        Button5.setForeground(new java.awt.Color(255, 255, 255));
+        Button5.setText("REPASAR AQUI");
+        Button5.setPreferredSize(new java.awt.Dimension(134, 24));
+        Button5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                Button5ActionPerformed(evt);
             }
         });
 
-        jButton6.setBackground(new java.awt.Color(0, 102, 255));
-        jButton6.setFont(new java.awt.Font("Cascadia Code", 1, 12)); // NOI18N
-        jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setText("REPASAR AQUI");
-        jButton6.setPreferredSize(new java.awt.Dimension(134, 24));
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        Button6.setBackground(new java.awt.Color(0, 102, 255));
+        Button6.setFont(new java.awt.Font("Cascadia Code", 1, 12)); // NOI18N
+        Button6.setForeground(new java.awt.Color(255, 255, 255));
+        Button6.setText("REPASAR AQUI");
+        Button6.setPreferredSize(new java.awt.Dimension(134, 24));
+        Button6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                Button6ActionPerformed(evt);
             }
         });
 
-        jLabel11.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel11.setText("7. Maecenas in lacus mauris. Morbi mattis sed urna a malesuada?");
-        jLabel11.setToolTipText("");
-        jLabel11.setAutoscrolls(true);
-        jLabel11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(138, 44, 63), 2, true));
+        Question7.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        Question7.setForeground(new java.awt.Color(255, 255, 255));
+        Question7.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        Question7.setText("7. Maecenas in lacus mauris. Morbi mattis sed urna a malesuada?");
+        Question7.setToolTipText("");
+        Question7.setAutoscrolls(true);
+        Question7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(138, 44, 63), 2, true));
 
-        jLabel12.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel12.setText("8. Maecenas in lacus mauris. Morbi mattis sed urna a malesuada?");
-        jLabel12.setToolTipText("");
-        jLabel12.setAutoscrolls(true);
-        jLabel12.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(37, 105, 37), 2, true));
+        Question8.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        Question8.setForeground(new java.awt.Color(255, 255, 255));
+        Question8.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        Question8.setText("8. Maecenas in lacus mauris. Morbi mattis sed urna a malesuada?");
+        Question8.setToolTipText("");
+        Question8.setAutoscrolls(true);
+        Question8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(37, 105, 37), 2, true));
 
-        jLabel13.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel13.setText("9. Maecenas in lacus mauris. Morbi mattis sed urna a malesuada?");
-        jLabel13.setToolTipText("");
-        jLabel13.setAutoscrolls(true);
-        jLabel13.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(37, 105, 37), 2, true));
+        Question9.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        Question9.setForeground(new java.awt.Color(255, 255, 255));
+        Question9.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        Question9.setText("9. Maecenas in lacus mauris. Morbi mattis sed urna a malesuada?");
+        Question9.setToolTipText("");
+        Question9.setAutoscrolls(true);
+        Question9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(37, 105, 37), 2, true));
 
-        jButton7.setBackground(new java.awt.Color(0, 102, 255));
-        jButton7.setFont(new java.awt.Font("Cascadia Code", 1, 12)); // NOI18N
-        jButton7.setForeground(new java.awt.Color(255, 255, 255));
-        jButton7.setText("REPASAR AQUI");
-        jButton7.setPreferredSize(new java.awt.Dimension(134, 24));
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        Button7.setBackground(new java.awt.Color(0, 102, 255));
+        Button7.setFont(new java.awt.Font("Cascadia Code", 1, 12)); // NOI18N
+        Button7.setForeground(new java.awt.Color(255, 255, 255));
+        Button7.setText("REPASAR AQUI");
+        Button7.setPreferredSize(new java.awt.Dimension(134, 24));
+        Button7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                Button7ActionPerformed(evt);
             }
         });
 
-        jButton8.setBackground(new java.awt.Color(0, 102, 255));
-        jButton8.setFont(new java.awt.Font("Cascadia Code", 1, 12)); // NOI18N
-        jButton8.setForeground(new java.awt.Color(255, 255, 255));
-        jButton8.setText("REPASAR AQUI");
-        jButton8.setPreferredSize(new java.awt.Dimension(134, 24));
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
+        Button8.setBackground(new java.awt.Color(0, 102, 255));
+        Button8.setFont(new java.awt.Font("Cascadia Code", 1, 12)); // NOI18N
+        Button8.setForeground(new java.awt.Color(255, 255, 255));
+        Button8.setText("REPASAR AQUI");
+        Button8.setPreferredSize(new java.awt.Dimension(134, 24));
+        Button8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
+                Button8ActionPerformed(evt);
             }
         });
 
-        jButton9.setBackground(new java.awt.Color(0, 102, 255));
-        jButton9.setFont(new java.awt.Font("Cascadia Code", 1, 12)); // NOI18N
-        jButton9.setForeground(new java.awt.Color(255, 255, 255));
-        jButton9.setText("REPASAR AQUI");
-        jButton9.setPreferredSize(new java.awt.Dimension(134, 24));
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
+        Button9.setBackground(new java.awt.Color(0, 102, 255));
+        Button9.setFont(new java.awt.Font("Cascadia Code", 1, 12)); // NOI18N
+        Button9.setForeground(new java.awt.Color(255, 255, 255));
+        Button9.setText("REPASAR AQUI");
+        Button9.setPreferredSize(new java.awt.Dimension(134, 24));
+        Button9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
+                Button9ActionPerformed(evt);
             }
         });
 
-        jLabel14.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel14.setText("10. Maecenas in lacus mauris. Morbi mattis sed urna a malesuada?");
-        jLabel14.setToolTipText("");
-        jLabel14.setAutoscrolls(true);
-        jLabel14.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(37, 105, 37), 2, true));
+        Question10.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        Question10.setForeground(new java.awt.Color(255, 255, 255));
+        Question10.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        Question10.setText("10. Maecenas in lacus mauris. Morbi mattis sed urna a malesuada?");
+        Question10.setToolTipText("");
+        Question10.setAutoscrolls(true);
+        Question10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(37, 105, 37), 2, true));
+        Question10.setMinimumSize(new java.awt.Dimension(540, 28));
 
-        jButton10.setBackground(new java.awt.Color(0, 102, 255));
-        jButton10.setFont(new java.awt.Font("Cascadia Code", 1, 12)); // NOI18N
-        jButton10.setForeground(new java.awt.Color(255, 255, 255));
-        jButton10.setText("REPASAR AQUI");
-        jButton10.setPreferredSize(new java.awt.Dimension(134, 24));
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
+        Button10.setBackground(new java.awt.Color(0, 102, 255));
+        Button10.setFont(new java.awt.Font("Cascadia Code", 1, 12)); // NOI18N
+        Button10.setForeground(new java.awt.Color(255, 255, 255));
+        Button10.setText("REPASAR AQUI");
+        Button10.setPreferredSize(new java.awt.Dimension(134, 24));
+        Button10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
+                Button10ActionPerformed(evt);
             }
         });
 
@@ -319,13 +329,52 @@ public class FrmResultados extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(Question1, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel3)
-                .addGap(18, 18, 18)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(26, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
+                .addComponent(Button1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(20, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGap(12, 12, 12)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addComponent(Question2, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addComponent(Button2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addComponent(Question3, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addComponent(Button3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addComponent(Question4, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addComponent(Button4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addComponent(Question5, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addComponent(Button5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addComponent(Question6, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addComponent(Button6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addComponent(Question7, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addComponent(Button7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addComponent(Question8, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addComponent(Button8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addComponent(Question9, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addComponent(Button9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addComponent(Question10, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(Button10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGap(20, 20, 20))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jSeparator1)
                     .addComponent(jSeparator2)
@@ -336,163 +385,123 @@ public class FrmResultados extends javax.swing.JFrame {
                     .addComponent(jSeparator7)
                     .addComponent(jSeparator8)
                     .addComponent(jSeparator9)
-                    .addComponent(jSeparator10)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(12, 12, 12)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel6)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel7)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel8)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel9)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel10)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel11)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel12)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel13)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel14)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap())
+                    .addComponent(jSeparator10)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(Question1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Button1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(Question2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Button2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(Question3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Button3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(Question4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Button4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(Question5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Button5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(Question6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Button6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(Question7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Button7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator7, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(Question8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Button8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator8, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(Question9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Button9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator9, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(Question10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Button10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(18, 18, Short.MAX_VALUE)
                 .addComponent(jSeparator10, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(25, 25, 25))
+                .addContainerGap())
         );
 
-        jLabel3.getAccessibleContext().setAccessibleName("<html><body>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit/body></html>");
+        Question1.getAccessibleContext().setAccessibleName("<html><body>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit/body></html>");
 
         jScrollPane1.setViewportView(jPanel1);
 
-        getContentPane().add(jScrollPane1, java.awt.BorderLayout.LINE_END);
+        getContentPane().add(jScrollPane1, java.awt.BorderLayout.LINE_START);
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void Button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_Button1ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void Button2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_Button2ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void Button3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_Button3ActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void Button4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_Button4ActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void Button5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button5ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_Button5ActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void Button6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button6ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_Button6ActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void Button7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button7ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
+    }//GEN-LAST:event_Button7ActionPerformed
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    private void Button8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button8ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton8ActionPerformed
+    }//GEN-LAST:event_Button8ActionPerformed
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+    private void Button9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button9ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton9ActionPerformed
+    }//GEN-LAST:event_Button9ActionPerformed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    private void Button10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button10ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton10ActionPerformed
+    }//GEN-LAST:event_Button10ActionPerformed
 
     
     public void mouseHover(JButton btn){
@@ -545,41 +554,41 @@ public class FrmResultados extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    public javax.swing.JButton Button1;
+    public javax.swing.JButton Button10;
+    public javax.swing.JButton Button2;
+    public javax.swing.JButton Button3;
+    public javax.swing.JButton Button4;
+    public javax.swing.JButton Button5;
+    public javax.swing.JButton Button6;
+    public javax.swing.JButton Button7;
+    public javax.swing.JButton Button8;
+    public javax.swing.JButton Button9;
+    private javax.swing.JLabel Paragraph;
+    public javax.swing.JLabel Question1;
+    public javax.swing.JLabel Question10;
+    public javax.swing.JLabel Question2;
+    public javax.swing.JLabel Question3;
+    public javax.swing.JLabel Question4;
+    public javax.swing.JLabel Question5;
+    public javax.swing.JLabel Question6;
+    public javax.swing.JLabel Question7;
+    public javax.swing.JLabel Question8;
+    public javax.swing.JLabel Question9;
+    private javax.swing.JLabel Score;
+    private javax.swing.JLabel Title;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JSeparator jSeparator10;
-    private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JSeparator jSeparator3;
-    private javax.swing.JSeparator jSeparator4;
-    private javax.swing.JSeparator jSeparator5;
-    private javax.swing.JSeparator jSeparator6;
-    private javax.swing.JSeparator jSeparator7;
-    private javax.swing.JSeparator jSeparator8;
-    private javax.swing.JSeparator jSeparator9;
+    public javax.swing.JSeparator jSeparator1;
+    public javax.swing.JSeparator jSeparator10;
+    public javax.swing.JSeparator jSeparator2;
+    public javax.swing.JSeparator jSeparator3;
+    public javax.swing.JSeparator jSeparator4;
+    public javax.swing.JSeparator jSeparator5;
+    public javax.swing.JSeparator jSeparator6;
+    public javax.swing.JSeparator jSeparator7;
+    public javax.swing.JSeparator jSeparator8;
+    public javax.swing.JSeparator jSeparator9;
     // End of variables declaration//GEN-END:variables
 }

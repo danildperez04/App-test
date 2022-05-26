@@ -34,7 +34,8 @@ public class FrmQuestions extends javax.swing.JFrame {
         setResizable(false);
 
         PPrincipal.setBackground(new java.awt.Color(18, 31, 61));
-        PPrincipal.setPreferredSize(new java.awt.Dimension(400, 400));
+        PPrincipal.setMinimumSize(new java.awt.Dimension(720, 429));
+        PPrincipal.setPreferredSize(new java.awt.Dimension(720, 429));
 
         LblImagenPregunta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/pregunta (1).png"))); // NOI18N
 
@@ -168,11 +169,11 @@ public class FrmQuestions extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PPrincipal, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 720, Short.MAX_VALUE)
+            .addComponent(PPrincipal, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, 429, Short.MAX_VALUE)
+            .addComponent(PPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();

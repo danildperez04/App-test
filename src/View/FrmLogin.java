@@ -56,11 +56,17 @@ public class FrmLogin extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(18, 31, 61));
+        setMinimumSize(new java.awt.Dimension(720, 449));
+        setPreferredSize(new java.awt.Dimension(720, 449));
+        setResizable(false);
 
         PMain.setBackground(new java.awt.Color(18, 31, 61));
+        PMain.setMinimumSize(new java.awt.Dimension(720, 429));
+        PMain.setPreferredSize(new java.awt.Dimension(720, 429));
 
         PBanner.setBackground(new java.awt.Color(18, 31, 61));
         PBanner.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
+        PBanner.setPreferredSize(new java.awt.Dimension(450, 449));
 
         LblBannerImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/avion-de-papel (1).png"))); // NOI18N
 
@@ -76,23 +82,22 @@ public class FrmLogin extends javax.swing.JFrame {
         PBanner.setLayout(PBannerLayout);
         PBannerLayout.setHorizontalGroup(
             PBannerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PBannerLayout.createSequentialGroup()
-                .addContainerGap(88, Short.MAX_VALUE)
+            .addGroup(PBannerLayout.createSequentialGroup()
+                .addGap(18, 18, 18)
                 .addGroup(PBannerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PBannerLayout.createSequentialGroup()
                         .addComponent(LblBannerImg, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(148, 148, 148))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PBannerLayout.createSequentialGroup()
-                        .addComponent(LblPhrase)
-                        .addGap(79, 79, 79))
+                        .addGap(69, 69, 69))
+                    .addComponent(LblPhrase, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PBannerLayout.createSequentialGroup()
                         .addComponent(LblSubPhrase)
-                        .addGap(106, 106, 106))))
+                        .addGap(27, 27, 27)))
+                .addContainerGap(13, Short.MAX_VALUE))
         );
         PBannerLayout.setVerticalGroup(
             PBannerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PBannerLayout.createSequentialGroup()
-                .addGap(36, 36, 36)
+                .addGap(16, 16, 16)
                 .addComponent(LblBannerImg)
                 .addGap(55, 55, 55)
                 .addComponent(LblPhrase)
@@ -102,9 +107,14 @@ public class FrmLogin extends javax.swing.JFrame {
         );
 
         PUserFeatures.setBackground(new java.awt.Color(18, 31, 61));
+        PUserFeatures.setForeground(new java.awt.Color(204, 204, 204));
         PUserFeatures.setToolTipText("");
+        PUserFeatures.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        PUserFeatures.setFont(new java.awt.Font("Cascadia Code", 0, 12)); // NOI18N
+        PUserFeatures.setMinimumSize(new java.awt.Dimension(220, 449));
         PUserFeatures.setName(""); // NOI18N
         PUserFeatures.setOpaque(true);
+        PUserFeatures.setPreferredSize(new java.awt.Dimension(270, 449));
 
         PSignIn.setBackground(new java.awt.Color(18, 31, 61));
         PSignIn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
@@ -123,6 +133,11 @@ public class FrmLogin extends javax.swing.JFrame {
 
         BtnSignIn.setBackground(new java.awt.Color(102, 255, 102));
         BtnSignIn.setText("SIGN IN");
+        BtnSignIn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnSignInActionPerformed(evt);
+            }
+        });
 
         LblSignInImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/user (1).png"))); // NOI18N
 
@@ -139,24 +154,27 @@ public class FrmLogin extends javax.swing.JFrame {
             .addGroup(PSignInLayout.createSequentialGroup()
                 .addGroup(PSignInLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(PSignInLayout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addGroup(PSignInLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(TxtPassword, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(LblCarnet)
-                            .addComponent(LblPassword)
-                            .addComponent(FtxtSignInCarnet)))
-                    .addGroup(PSignInLayout.createSequentialGroup()
-                        .addGap(97, 97, 97)
+                        .addGap(85, 85, 85)
                         .addGroup(PSignInLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(LblSignIn)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PSignInLayout.createSequentialGroup()
                                 .addComponent(LblSignInImg)
-                                .addGap(8, 8, 8)))))
-                .addContainerGap(15, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PSignInLayout.createSequentialGroup()
-                .addGap(0, 69, Short.MAX_VALUE)
-                .addComponent(BtnSignIn, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(64, 64, 64))
+                                .addGap(8, 8, 8))))
+                    .addGroup(PSignInLayout.createSequentialGroup()
+                        .addGap(25, 25, 25)
+                        .addGroup(PSignInLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(PSignInLayout.createSequentialGroup()
+                                .addGap(12, 12, 12)
+                                .addGroup(PSignInLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(LblCarnet)
+                                    .addComponent(LblPassword)))
+                            .addGroup(PSignInLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(FtxtSignInCarnet, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(TxtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(PSignInLayout.createSequentialGroup()
+                        .addGap(58, 58, 58)
+                        .addComponent(BtnSignIn, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(30, 30, 30))
         );
         PSignInLayout.setVerticalGroup(
             PSignInLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -165,7 +183,7 @@ public class FrmLogin extends javax.swing.JFrame {
                 .addComponent(LblSignIn, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(LblSignInImg)
-                .addGap(39, 39, 39)
+                .addGap(26, 26, 26)
                 .addComponent(LblCarnet)
                 .addGap(18, 18, 18)
                 .addComponent(FtxtSignInCarnet, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -173,15 +191,16 @@ public class FrmLogin extends javax.swing.JFrame {
                 .addComponent(LblPassword)
                 .addGap(18, 18, 18)
                 .addComponent(TxtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(56, 56, 56)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
                 .addComponent(BtnSignIn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(72, Short.MAX_VALUE))
+                .addGap(16, 16, 16))
         );
 
         PUserFeatures.addTab("SIGN IN", PSignIn);
 
         PSign.setBackground(new java.awt.Color(18, 31, 61));
         PSign.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
+        PSign.setPreferredSize(new java.awt.Dimension(246, 397));
 
         LblSignUp.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
         LblSignUp.setForeground(new java.awt.Color(255, 255, 255));
@@ -213,6 +232,13 @@ public class FrmLogin extends javax.swing.JFrame {
         LblSignUpPassword.setForeground(new java.awt.Color(255, 255, 255));
         LblSignUpPassword.setText("Password");
 
+        TxtSignUpPassword.setPreferredSize(new java.awt.Dimension(206, 22));
+        TxtSignUpPassword.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TxtSignUpPasswordActionPerformed(evt);
+            }
+        });
+
         RbtnSignUpMale.setBackground(new java.awt.Color(18, 31, 61));
         buttonGroup1.add(RbtnSignUpMale);
         RbtnSignUpMale.setFont(new java.awt.Font("Arial Black", 1, 10)); // NOI18N
@@ -238,36 +264,34 @@ public class FrmLogin extends javax.swing.JFrame {
             .addGroup(PSignLayout.createSequentialGroup()
                 .addGroup(PSignLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(PSignLayout.createSequentialGroup()
-                        .addGap(97, 97, 97)
+                        .addGap(79, 79, 79)
                         .addComponent(LblSignUp))
                     .addGroup(PSignLayout.createSequentialGroup()
-                        .addGap(19, 19, 19)
-                        .addGroup(PSignLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(LblSignUpPassword)
-                            .addComponent(LblSignUpCarnet)
-                            .addComponent(LblSignUpUsername)
-                            .addComponent(TxtSignUpUsername, javax.swing.GroupLayout.DEFAULT_SIZE, 227, Short.MAX_VALUE)
-                            .addComponent(TxtSignUpPassword)
-                            .addComponent(FtxtSignUpCarnet))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PSignLayout.createSequentialGroup()
-                .addGap(0, 69, Short.MAX_VALUE)
-                .addGroup(PSignLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PSignLayout.createSequentialGroup()
-                        .addComponent(BtnSignUp, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(64, 64, 64))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PSignLayout.createSequentialGroup()
-                        .addComponent(RbtnSignUpFemale)
-                        .addGap(10, 10, 10)
-                        .addComponent(RbtnSignUpMale)
-                        .addGap(14, 14, 14))))
+                        .addGap(24, 24, 24)
+                        .addGroup(PSignLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(PSignLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(LblSignUpPassword)
+                                .addComponent(LblSignUpCarnet)
+                                .addComponent(LblSignUpUsername)
+                                .addComponent(TxtSignUpPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(PSignLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(FtxtSignUpCarnet, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE)
+                                    .addComponent(TxtSignUpUsername, javax.swing.GroupLayout.Alignment.LEADING)))
+                            .addGroup(PSignLayout.createSequentialGroup()
+                                .addComponent(RbtnSignUpFemale)
+                                .addGap(10, 10, 10)
+                                .addComponent(RbtnSignUpMale))))
+                    .addGroup(PSignLayout.createSequentialGroup()
+                        .addGap(55, 55, 55)
+                        .addComponent(BtnSignUp, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
         PSignLayout.setVerticalGroup(
             PSignLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PSignLayout.createSequentialGroup()
-                .addGap(18, 18, 18)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(LblSignUp, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(LblSignUpUsername)
                 .addGap(18, 18, 18)
                 .addComponent(TxtSignUpUsername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -279,13 +303,13 @@ public class FrmLogin extends javax.swing.JFrame {
                 .addComponent(LblSignUpPassword)
                 .addGap(18, 18, 18)
                 .addComponent(TxtSignUpPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
+                .addGap(18, 18, 18)
                 .addGroup(PSignLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(RbtnSignUpMale)
                     .addComponent(RbtnSignUpFemale))
-                .addGap(27, 27, 27)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(BtnSignUp, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(70, Short.MAX_VALUE))
+                .addGap(27, 27, 27))
         );
 
         PUserFeatures.addTab("SIGN UP", PSign);
@@ -296,31 +320,31 @@ public class FrmLogin extends javax.swing.JFrame {
             PMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PMainLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(PBanner, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(PUserFeatures, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addComponent(PBanner, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(6, 6, 6)
+                .addComponent(PUserFeatures, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12))
         );
         PMainLayout.setVerticalGroup(
             PMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PMainLayout.createSequentialGroup()
-                .addGroup(PMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PMainLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(PBanner, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(PUserFeatures))
-                .addContainerGap())
+                .addComponent(PUserFeatures, javax.swing.GroupLayout.PREFERRED_SIZE, 415, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(PMainLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(PBanner, javax.swing.GroupLayout.PREFERRED_SIZE, 408, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(15, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PMain, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(PMain, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PMain, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(PMain, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -334,6 +358,14 @@ public class FrmLogin extends javax.swing.JFrame {
     private void TxtSignUpUsernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtSignUpUsernameActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TxtSignUpUsernameActionPerformed
+
+    private void BtnSignInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSignInActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BtnSignInActionPerformed
+
+    private void TxtSignUpPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtSignUpPasswordActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TxtSignUpPasswordActionPerformed
 
     /**
      * @param args the command line arguments

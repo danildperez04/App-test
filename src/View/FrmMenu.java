@@ -45,6 +45,8 @@ public class FrmMenu extends javax.swing.JFrame {
         setResizable(false);
 
         PPrincipal.setBackground(new java.awt.Color(18, 31, 61));
+        PPrincipal.setMinimumSize(new java.awt.Dimension(720, 429));
+        PPrincipal.setPreferredSize(new java.awt.Dimension(720, 429));
 
         panelRound1.setBackground(new java.awt.Color(255, 99, 99));
         panelRound1.setRoundBottomLeft(30);
@@ -254,7 +256,7 @@ public class FrmMenu extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(PPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, 449, Short.MAX_VALUE)
         );
 
         pack();
