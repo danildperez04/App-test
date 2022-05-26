@@ -27,32 +27,28 @@ public class CQuestions {
     public void initButtons(){
         view.BtnResp1.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent evt){
-                answerIsCorrect(0);
                 pressButton();
             }
         });
         view.BtnResp2.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent evt){
-                answerIsCorrect(1);
                 pressButton();
             }
         });
         view.BtnResp3.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent evt){
-                answerIsCorrect(2);
                 pressButton();
             }
         });
         view.BtnResp4.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent evt){
-                answerIsCorrect(3);
                 pressButton();
             }
         });
     }
 
     public void pressButton(){
-        if(n < 10){
+        if(n < questions.size()){
             updateQuestion(questions.get(sequenceQuestions.get(n)));
             n++;
         } else {
@@ -63,21 +59,11 @@ public class CQuestions {
         }
     }
 
-    public void answerIsCorrect(int indexButton){
-        /*var button = btnAnswers[indexButton];
-        var buttonColor = button.getBackground();
-        if(indexButton == questions.get(sequenceQuestions.get(n-1)).getIndexCorrectAnswer())
-            button.setBackground(Color.green);
-        else
-            button.setBackground(Color.red);
-        
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(CQuestions.class.getName()).log(Level.SEVERE, null, ex);
+    public void answerIsCorrect(String textBtn){
+        Question question = questions.get(sequenceQuestions.get(n));
+        if(textBtn.equals(question.getCorrectAnswer())){
+            question.setIsCorrect(true);
         }
-        
-        button.setBackground(buttonColor);*/
     }
 
     public void updateQuestion(Question nextQuestion){//

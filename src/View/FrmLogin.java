@@ -57,7 +57,6 @@ public class FrmLogin extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(18, 31, 61));
         setMinimumSize(new java.awt.Dimension(720, 449));
-        setPreferredSize(new java.awt.Dimension(720, 449));
         setResizable(false);
 
         PMain.setBackground(new java.awt.Color(18, 31, 61));
@@ -92,18 +91,17 @@ public class FrmLogin extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PBannerLayout.createSequentialGroup()
                         .addComponent(LblSubPhrase)
                         .addGap(27, 27, 27)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
         PBannerLayout.setVerticalGroup(
             PBannerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PBannerLayout.createSequentialGroup()
-                .addGap(16, 16, 16)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(LblBannerImg)
                 .addGap(55, 55, 55)
                 .addComponent(LblPhrase)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(LblSubPhrase)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(LblSubPhrase))
         );
 
         PUserFeatures.setBackground(new java.awt.Color(18, 31, 61));
@@ -191,7 +189,7 @@ public class FrmLogin extends javax.swing.JFrame {
                 .addComponent(LblPassword)
                 .addGap(18, 18, 18)
                 .addComponent(TxtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
                 .addComponent(BtnSignIn, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(16, 16, 16))
         );
@@ -284,7 +282,7 @@ public class FrmLogin extends javax.swing.JFrame {
                     .addGroup(PSignLayout.createSequentialGroup()
                         .addGap(55, 55, 55)
                         .addComponent(BtnSignUp, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(11, Short.MAX_VALUE))
         );
         PSignLayout.setVerticalGroup(
             PSignLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -322,18 +320,18 @@ public class FrmLogin extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(PBanner, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(6, 6, 6)
-                .addComponent(PUserFeatures, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(12, 12, 12))
+                .addComponent(PUserFeatures, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         PMainLayout.setVerticalGroup(
             PMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PMainLayout.createSequentialGroup()
-                .addComponent(PUserFeatures, javax.swing.GroupLayout.PREFERRED_SIZE, 415, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(PMainLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(PBanner, javax.swing.GroupLayout.PREFERRED_SIZE, 408, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(9, Short.MAX_VALUE))
+                .addGroup(PMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(PUserFeatures, javax.swing.GroupLayout.PREFERRED_SIZE, 419, Short.MAX_VALUE)
+                    .addGroup(PMainLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(PBanner, javax.swing.GroupLayout.DEFAULT_SIZE, 409, Short.MAX_VALUE)))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

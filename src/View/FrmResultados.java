@@ -70,7 +70,6 @@ public class FrmResultados extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Test Ingles Pregunta #");
-        setPreferredSize(new java.awt.Dimension(720, 805));
         setResizable(false);
 
         jPanel2.setBackground(new java.awt.Color(12, 21, 50));
