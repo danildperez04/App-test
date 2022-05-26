@@ -53,13 +53,13 @@
               <Group type="102" attributes="0">
                   <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="panelRound3" max="32767" attributes="0"/>
-                      <Component id="panelRound1" max="32767" attributes="0"/>
+                      <Component id="B1" max="32767" attributes="0"/>
+                      <Component id="A1" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace pref="123" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="panelRound2" max="32767" attributes="0"/>
-                      <Component id="panelRound4" max="32767" attributes="0"/>
+                      <Component id="A2" max="32767" attributes="0"/>
+                      <Component id="B2" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace min="0" pref="38" max="32767" attributes="0"/>
               </Group>
@@ -70,13 +70,13 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="panelRound1" max="32767" attributes="0"/>
-                      <Component id="panelRound2" max="32767" attributes="0"/>
+                      <Component id="A1" max="32767" attributes="0"/>
+                      <Component id="A2" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace pref="95" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="panelRound3" max="32767" attributes="0"/>
-                      <Component id="panelRound4" max="32767" attributes="0"/>
+                      <Component id="B1" max="32767" attributes="0"/>
+                      <Component id="B2" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
               </Group>
@@ -84,7 +84,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Container class="Model.PanelRound" name="panelRound1">
+        <Container class="Model.PanelRound" name="A1">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="63" green="63" red="ff" type="rgb"/>
@@ -94,6 +94,9 @@
             <Property name="roundTopLeft" type="int" value="30"/>
             <Property name="roundTopRight" type="int" value="30"/>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
 
           <Layout>
             <DimensionLayout dim="0">
@@ -150,7 +153,7 @@
             </Component>
           </SubComponents>
         </Container>
-        <Container class="Model.PanelRound" name="panelRound2">
+        <Container class="Model.PanelRound" name="A2">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="e0" red="4d" type="rgb"/>
@@ -160,6 +163,9 @@
             <Property name="roundTopLeft" type="int" value="30"/>
             <Property name="roundTopRight" type="int" value="30"/>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
 
           <Layout>
             <DimensionLayout dim="0">
@@ -215,7 +221,7 @@
             </Component>
           </SubComponents>
         </Container>
-        <Container class="Model.PanelRound" name="panelRound3">
+        <Container class="Model.PanelRound" name="B1">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="2e" green="f7" red="ff" type="rgb"/>
@@ -225,6 +231,9 @@
             <Property name="roundTopLeft" type="int" value="30"/>
             <Property name="roundTopRight" type="int" value="30"/>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
 
           <Layout>
             <DimensionLayout dim="0">
@@ -281,7 +290,7 @@
             </Component>
           </SubComponents>
         </Container>
-        <Container class="Model.PanelRound" name="panelRound4">
+        <Container class="Model.PanelRound" name="B2">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="9c" green="fa" red="97" type="rgb"/>
@@ -291,6 +300,9 @@
             <Property name="roundTopLeft" type="int" value="30"/>
             <Property name="roundTopRight" type="int" value="30"/>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
 
           <Layout>
             <DimensionLayout dim="0">

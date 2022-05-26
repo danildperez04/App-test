@@ -28,16 +28,16 @@ public class FrmMenu extends javax.swing.JFrame {
     private void initComponents() {
 
         PPrincipal = new javax.swing.JPanel();
-        panelRound1 = new Model.PanelRound();
+        A1 = new Model.PanelRound();
         panelRound5 = new Model.PanelRound();
         jLabel1 = new javax.swing.JLabel();
-        panelRound2 = new Model.PanelRound();
+        A2 = new Model.PanelRound();
         panelRound6 = new Model.PanelRound();
         jLabel3 = new javax.swing.JLabel();
-        panelRound3 = new Model.PanelRound();
+        B1 = new Model.PanelRound();
         panelRound7 = new Model.PanelRound();
         jLabel5 = new javax.swing.JLabel();
-        panelRound4 = new Model.PanelRound();
+        B2 = new Model.PanelRound();
         panelRound8 = new Model.PanelRound();
         jLabel2 = new javax.swing.JLabel();
 
@@ -48,11 +48,11 @@ public class FrmMenu extends javax.swing.JFrame {
         PPrincipal.setMinimumSize(new java.awt.Dimension(720, 429));
         PPrincipal.setPreferredSize(new java.awt.Dimension(720, 429));
 
-        panelRound1.setBackground(new java.awt.Color(255, 99, 99));
-        panelRound1.setRoundBottomLeft(30);
-        panelRound1.setRoundBottomRight(30);
-        panelRound1.setRoundTopLeft(30);
-        panelRound1.setRoundTopRight(30);
+        A1.setBackground(new java.awt.Color(255, 99, 99));
+        A1.setRoundBottomLeft(30);
+        A1.setRoundBottomRight(30);
+        A1.setRoundTopLeft(30);
+        A1.setRoundTopRight(30);
 
         panelRound5.setBackground(new java.awt.Color(64, 87, 123));
         panelRound5.setRoundBottomLeft(30);
@@ -72,30 +72,30 @@ public class FrmMenu extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/eng.png"))); // NOI18N
         jLabel1.setText("jLabel1");
 
-        javax.swing.GroupLayout panelRound1Layout = new javax.swing.GroupLayout(panelRound1);
-        panelRound1.setLayout(panelRound1Layout);
-        panelRound1Layout.setHorizontalGroup(
-            panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout A1Layout = new javax.swing.GroupLayout(A1);
+        A1.setLayout(A1Layout);
+        A1Layout.setHorizontalGroup(
+            A1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(panelRound5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(panelRound1Layout.createSequentialGroup()
+            .addGroup(A1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        panelRound1Layout.setVerticalGroup(
-            panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelRound1Layout.createSequentialGroup()
+        A1Layout.setVerticalGroup(
+            A1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, A1Layout.createSequentialGroup()
                 .addContainerGap(16, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
                 .addComponent(panelRound5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        panelRound2.setBackground(new java.awt.Color(77, 224, 0));
-        panelRound2.setRoundBottomLeft(30);
-        panelRound2.setRoundBottomRight(30);
-        panelRound2.setRoundTopLeft(30);
-        panelRound2.setRoundTopRight(30);
+        A2.setBackground(new java.awt.Color(77, 224, 0));
+        A2.setRoundBottomLeft(30);
+        A2.setRoundBottomRight(30);
+        A2.setRoundTopLeft(30);
+        A2.setRoundTopRight(30);
 
         panelRound6.setBackground(new java.awt.Color(57, 80, 116));
         panelRound6.setRoundBottomLeft(30);
@@ -115,29 +115,29 @@ public class FrmMenu extends javax.swing.JFrame {
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/atom.png"))); // NOI18N
         jLabel3.setText("jLabel3");
 
-        javax.swing.GroupLayout panelRound2Layout = new javax.swing.GroupLayout(panelRound2);
-        panelRound2.setLayout(panelRound2Layout);
-        panelRound2Layout.setHorizontalGroup(
-            panelRound2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout A2Layout = new javax.swing.GroupLayout(A2);
+        A2.setLayout(A2Layout);
+        A2Layout.setHorizontalGroup(
+            A2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(panelRound6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(panelRound2Layout.createSequentialGroup()
+            .addGroup(A2Layout.createSequentialGroup()
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
-        panelRound2Layout.setVerticalGroup(
-            panelRound2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelRound2Layout.createSequentialGroup()
+        A2Layout.setVerticalGroup(
+            A2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, A2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(panelRound6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        panelRound3.setBackground(new java.awt.Color(255, 247, 46));
-        panelRound3.setRoundBottomLeft(30);
-        panelRound3.setRoundBottomRight(30);
-        panelRound3.setRoundTopLeft(30);
-        panelRound3.setRoundTopRight(30);
+        B1.setBackground(new java.awt.Color(255, 247, 46));
+        B1.setRoundBottomLeft(30);
+        B1.setRoundBottomRight(30);
+        B1.setRoundTopLeft(30);
+        B1.setRoundTopRight(30);
 
         panelRound7.setBackground(new java.awt.Color(60, 83, 119));
         panelRound7.setRoundBottomLeft(30);
@@ -157,30 +157,30 @@ public class FrmMenu extends javax.swing.JFrame {
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/aprender-en-linea.png"))); // NOI18N
         jLabel5.setText("jLabel5");
 
-        javax.swing.GroupLayout panelRound3Layout = new javax.swing.GroupLayout(panelRound3);
-        panelRound3.setLayout(panelRound3Layout);
-        panelRound3Layout.setHorizontalGroup(
-            panelRound3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout B1Layout = new javax.swing.GroupLayout(B1);
+        B1.setLayout(B1Layout);
+        B1Layout.setHorizontalGroup(
+            B1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(panelRound7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(panelRound3Layout.createSequentialGroup()
+            .addGroup(B1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        panelRound3Layout.setVerticalGroup(
-            panelRound3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelRound3Layout.createSequentialGroup()
+        B1Layout.setVerticalGroup(
+            B1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, B1Layout.createSequentialGroup()
                 .addContainerGap(18, Short.MAX_VALUE)
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(panelRound7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        panelRound4.setBackground(new java.awt.Color(151, 250, 156));
-        panelRound4.setRoundBottomLeft(30);
-        panelRound4.setRoundBottomRight(30);
-        panelRound4.setRoundTopLeft(30);
-        panelRound4.setRoundTopRight(30);
+        B2.setBackground(new java.awt.Color(151, 250, 156));
+        B2.setRoundBottomLeft(30);
+        B2.setRoundBottomRight(30);
+        B2.setRoundTopLeft(30);
+        B2.setRoundTopRight(30);
 
         panelRound8.setBackground(new java.awt.Color(60, 83, 119));
         panelRound8.setRoundBottomLeft(30);
@@ -200,19 +200,19 @@ public class FrmMenu extends javax.swing.JFrame {
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/brain.png"))); // NOI18N
         jLabel2.setText("jLabel2");
 
-        javax.swing.GroupLayout panelRound4Layout = new javax.swing.GroupLayout(panelRound4);
-        panelRound4.setLayout(panelRound4Layout);
-        panelRound4Layout.setHorizontalGroup(
-            panelRound4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout B2Layout = new javax.swing.GroupLayout(B2);
+        B2.setLayout(B2Layout);
+        B2Layout.setHorizontalGroup(
+            B2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(panelRound8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(panelRound4Layout.createSequentialGroup()
+            .addGroup(B2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        panelRound4Layout.setVerticalGroup(
-            panelRound4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelRound4Layout.createSequentialGroup()
+        B2Layout.setVerticalGroup(
+            B2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, B2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -226,12 +226,12 @@ public class FrmMenu extends javax.swing.JFrame {
             .addGroup(PPrincipalLayout.createSequentialGroup()
                 .addGap(39, 39, 39)
                 .addGroup(PPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(panelRound3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(panelRound1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(B1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(A1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 123, Short.MAX_VALUE)
                 .addGroup(PPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(panelRound2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(panelRound4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(A2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(B2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(0, 38, Short.MAX_VALUE))
         );
         PPrincipalLayout.setVerticalGroup(
@@ -239,12 +239,12 @@ public class FrmMenu extends javax.swing.JFrame {
             .addGroup(PPrincipalLayout.createSequentialGroup()
                 .addGap(30, 30, 30)
                 .addGroup(PPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(panelRound1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(panelRound2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(A1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(A2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 95, Short.MAX_VALUE)
                 .addGroup(PPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(panelRound3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(panelRound4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(B1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(B2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(33, 33, 33))
         );
 
@@ -299,15 +299,15 @@ public class FrmMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public Model.PanelRound A1;
+    public Model.PanelRound A2;
+    public Model.PanelRound B1;
+    public Model.PanelRound B2;
     private javax.swing.JPanel PPrincipal;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
-    private Model.PanelRound panelRound1;
-    private Model.PanelRound panelRound2;
-    private Model.PanelRound panelRound3;
-    private Model.PanelRound panelRound4;
     private Model.PanelRound panelRound5;
     private Model.PanelRound panelRound6;
     private Model.PanelRound panelRound7;
