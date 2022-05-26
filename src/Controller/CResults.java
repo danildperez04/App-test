@@ -37,7 +37,7 @@ public class CResults {
         for (int i = 0; i < 10; i++) {
             JButton actualButton = btnsHelp[i];
             String actualLink = questions.get(i).getLink();
-        actualButton.addActionListener(new ActionListener() {
+            actualButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
                 
                 try {

@@ -92,7 +92,7 @@ public class FrmLogin extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PBannerLayout.createSequentialGroup()
                         .addComponent(LblSubPhrase)
                         .addGap(27, 27, 27)))
-                .addContainerGap(13, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         PBannerLayout.setVerticalGroup(
             PBannerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -109,7 +109,7 @@ public class FrmLogin extends javax.swing.JFrame {
         PUserFeatures.setBackground(new java.awt.Color(18, 31, 61));
         PUserFeatures.setForeground(new java.awt.Color(204, 204, 204));
         PUserFeatures.setToolTipText("");
-        PUserFeatures.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        PUserFeatures.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         PUserFeatures.setFont(new java.awt.Font("Cascadia Code", 0, 12)); // NOI18N
         PUserFeatures.setMinimumSize(new java.awt.Dimension(220, 449));
         PUserFeatures.setName(""); // NOI18N
@@ -333,7 +333,7 @@ public class FrmLogin extends javax.swing.JFrame {
             .addGroup(PMainLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(PBanner, javax.swing.GroupLayout.PREFERRED_SIZE, 408, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addContainerGap(9, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

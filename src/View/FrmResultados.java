@@ -311,7 +311,6 @@ public class FrmResultados extends javax.swing.JFrame {
         Question10.setToolTipText("");
         Question10.setAutoscrolls(true);
         Question10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(37, 105, 37), 2, true));
-        Question10.setMinimumSize(new java.awt.Dimension(540, 28));
 
         Button10.setBackground(new java.awt.Color(0, 102, 255));
         Button10.setFont(new java.awt.Font("Cascadia Code", 1, 12)); // NOI18N

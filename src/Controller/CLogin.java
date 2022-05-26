@@ -25,11 +25,28 @@ public class CLogin implements IComponentsHandler {
         view.BtnSignIn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
                 if (validateLogin()) {
+
                     FrmMenu menuView = new FrmMenu();
                     CMenu cMenu = new CMenu(menuView);
                     view.dispose();
                     menuView.setVisible(true);
-
+                    String carnet = view.FtxtSignInCarnet.getText();
+                    users = FileStream.getUsers();
+//                    users.get(carnet).getTests().get(0).setStatus(true);
+//                    users.get(carnet).getTests().get(1).setStatus(true);
+                    if(users.get(carnet).getTests().get(0).isStatus()){
+                        menuView.LblEstadoA1.setText("Completado");
+                    }
+                    if(users.get(carnet).getTests().get(1).isStatus()){
+                        menuView.LblEstadoA2.setText("Completado");
+                    }
+                    if(users.get(carnet).getTests().get(2).isStatus()){
+                        menuView.LblEstadoB1.setText("Completado");
+                    }
+                    if(users.get(carnet).getTests().get(3).isStatus()){
+                        menuView.LblEstadoB2.setText("Completado");
+                    }
+                    
                     view.dispose();
                 } else {
                     JOptionPane.showMessageDialog(null, "SU CONTRASEÑA, CARNET O NOMBRE DE USUARIO SON INCORRECTOS, POR FAVOR INGRESE CORRECTAMENTE SUS DATOS PARA CONTINUAR", "SIGN IN", 2);
@@ -50,7 +67,7 @@ public class CLogin implements IComponentsHandler {
         String encryptedPassword = Encryption.encryptThisString(view.TxtPassword.getText());
         String carnet = view.FtxtSignInCarnet.getText();
         users = FileStream.getUsers();
-
+  
         if (users != null && users.get(carnet) != null) {
             if (users.get(carnet).getPassword().equals(encryptedPassword)) {
                 return true;
