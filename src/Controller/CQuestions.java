@@ -2,6 +2,7 @@ package Controller;
 
 import Model.*;
 import View.FrmQuestions;
+import View.FrmResultados;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -16,13 +17,13 @@ public class CQuestions {
         this.model = model;
         this.testModel = test;
         this.btnAnswers = new JButton[]{view.BtnResp1, view.BtnResp2, view.BtnResp3, view.BtnResp4};
-        
+
         getSequence(testModel.getQuestions().size());
         questions = testModel.getQuestions();
         updateQuestion(questions.get(sequenceQuestions.get(0)));
         initButtons();
     }
-    
+
     public void initButtons(){
         view.BtnResp1.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent evt){
@@ -49,17 +50,19 @@ public class CQuestions {
             }
         });
     }
-    
+
     public void pressButton(){
         if(n < 10){
             updateQuestion(questions.get(sequenceQuestions.get(n)));
             n++;
-        }
-        else{
+        } else {
+            FrmResultados frmResults = new FrmResultados();
+            CResults cResults = new CResults(frmResults, questions);
+            frmResults.setVisible(true);
             view.dispose();
         }
     }
-    
+
     public void answerIsCorrect(int indexButton){
         /*var button = btnAnswers[indexButton];
         var buttonColor = button.getBackground();
@@ -76,7 +79,7 @@ public class CQuestions {
         
         button.setBackground(buttonColor);*/
     }
-        
+
     public void updateQuestion(Question nextQuestion){//
         System.out.println(nextQuestion);
         int i = 0;
@@ -88,13 +91,13 @@ public class CQuestions {
         view.LblImagenPregunta.setIcon(nextQuestion.getImageLabel());
         System.out.println("Question updated\n\n");
     }
-    
+
     public void getSequence(int max) {//Generate a random sequence for the questions in the test
         Random rnd = new Random();
         for (int i = 0; i < max; i++) {
             int aleatorio = -1;
             boolean generado = false;
-            
+
             while (!generado) {
                 int number = rnd.nextInt(max);
                 if (!sortedQuestions.contains(number)) {
@@ -103,16 +106,15 @@ public class CQuestions {
                     generado = true;
                 }
             }
-        sequenceQuestions.add(aleatorio);
+            sequenceQuestions.add(aleatorio);
         }
         System.out.println(sequenceQuestions.toString());
     }
-    
-    
+
     private FrmQuestions view;
     private Question model;
     private Test testModel = new Test();
-    private JButton[] btnAnswers= new JButton[4];
+    private JButton[] btnAnswers = new JButton[4];
     private ArrayList<Question> questions = null;
     private Set<Integer> sortedQuestions = new HashSet<>();
     private ArrayList<Integer> sequenceQuestions = new ArrayList<>();
