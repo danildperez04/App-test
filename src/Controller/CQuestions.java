@@ -27,28 +27,29 @@ public class CQuestions {
     public void initButtons(){
         view.BtnResp1.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent evt){
-                pressButton();
+                pressButton(view.BtnResp1.getText());
             }
         });
         view.BtnResp2.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent evt){
-                pressButton();
+                pressButton(view.BtnResp2.getText());
             }
         });
         view.BtnResp3.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent evt){
-                pressButton();
+                pressButton(view.BtnResp3.getText());
             }
         });
         view.BtnResp4.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent evt){
-                pressButton();
+                pressButton(view.BtnResp4.getText());
             }
         });
     }
 
-    public void pressButton(){
+    public void pressButton(String textBtn){
         if(n < questions.size()){
+            answerIsCorrect(textBtn);
             updateQuestion(questions.get(sequenceQuestions.get(n)));
             n++;
         } else {
@@ -60,7 +61,8 @@ public class CQuestions {
     }
 
     public void answerIsCorrect(String textBtn){
-        Question question = questions.get(sequenceQuestions.get(n));
+        Question question = questions.get(sequenceQuestions.get(n-1));
+        System.out.println(textBtn+" == "+question.getCorrectAnswer());
         if(textBtn.equals(question.getCorrectAnswer())){
             question.setIsCorrect(true);
         }

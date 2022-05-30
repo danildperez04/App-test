@@ -83,10 +83,10 @@ public class FrmResultados extends javax.swing.JFrame {
         Title.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         Title.setText("Tus Resultados!");
 
-        Score.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        Score.setFont(new java.awt.Font("Dialog", 1, 34)); // NOI18N
         Score.setForeground(new java.awt.Color(255, 255, 255));
         Score.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Score.setText("0   |   0/12");
+        Score.setText("0   |   0/10");
 
         Paragraph.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         Paragraph.setForeground(new java.awt.Color(255, 255, 255));
@@ -104,9 +104,9 @@ public class FrmResultados extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Title, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Paragraph, javax.swing.GroupLayout.PREFERRED_SIZE, 449, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(Score, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(44, 44, 44))
+                .addGap(70, 70, 70))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -573,7 +573,7 @@ public class FrmResultados extends javax.swing.JFrame {
     public javax.swing.JLabel Question7;
     public javax.swing.JLabel Question8;
     public javax.swing.JLabel Question9;
-    private javax.swing.JLabel Score;
+    public javax.swing.JLabel Score;
     private javax.swing.JLabel Title;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;

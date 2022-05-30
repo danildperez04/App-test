@@ -31,22 +31,34 @@ public class CResults {
         this.questionsLabel = new JLabel[]{view.Question1, view.Question2, view.Question3, view.Question4, view.Question5, view.Question6, view.Question7, view.Question8, view.Question9, view.Question10};
         initBtnsHelp();
         initQuestionsLabel();
+        initScore();
     }
 
-    public  void initBtnsHelp() {
+    public void initScore() {
+        float acum = 0;
+        for (int i = 0; i < 10; i++) {
+            if(questions.get(i).getIsCorrect()){
+                acum++;
+            }
+        }
+        System.out.println((acum/10)*100);
+        view.Score.setText((acum/10)*100+"% |  "+Math.round(acum)+ "/10");
+    }
+
+    public void initBtnsHelp() {
         for (int i = 0; i < 10; i++) {
             JButton actualButton = btnsHelp[i];
             String actualLink = questions.get(i).getLink();
             actualButton.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                
-                try {
-                    Desktop.getDesktop().browse(new URI(actualLink));
-                } catch (Exception e) {
-                    JOptionPane.showMessageDialog(null, "Error, no se puede ejecutar la acción");
+                public void actionPerformed(ActionEvent evt) {
+
+                    try {
+                        Desktop.getDesktop().browse(new URI(actualLink));
+                    } catch (Exception e) {
+                        JOptionPane.showMessageDialog(null, "Error, no se puede ejecutar la acción");
+                    }
                 }
-            }
-        });
+            });
 
         }
 
@@ -56,6 +68,7 @@ public class CResults {
         for (int i = 0; i < 10; i++) {
             JLabel actualQuestionLabel = questionsLabel[i];
             actualQuestionLabel.setText(questions.get(i).getQuestionLabel());
+            System.out.println(questions.get(i).getQuestionLabel() + questions.get(i).getIsCorrect());
             if (questions.get(i).getIsCorrect()) {
                 actualQuestionLabel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(37, 105, 37), 2, true));
 
@@ -70,6 +83,7 @@ public class CResults {
     private JButton[] btnsHelp = new JButton[10];
     private JLabel[] questionsLabel = new JLabel[10];
     private ArrayList<Question> questions = null;
+    private String score = null;
     private int n = 1;
 }
 //new Question("Cual es la pregunta1", new String[]{"Nada1", "Si hay1", "no1", "Ya1"}, "/Imagenes/pregunta (1).png", 0, "")
