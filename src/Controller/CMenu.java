@@ -67,7 +67,8 @@ public class CMenu {
         englishTest.addQuestion(new Question("Cual es la pregunta10", new String[]{"Esta es la respuesta", "Si hay10", "no10", "Ya10"}, "/Imagenes/reino-unido.png", 9, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
         CQuestions cQuestions = new CQuestions(frmQuestions, model, englishTest);
         view.dispose();
-        frmQuestions.setVisible(true);
+        CTemporizador tempo = new CTemporizador();
+        tempo.temporizador(frmQuestions);
     }
 
     private void A2MouseClicked(java.awt.event.MouseEvent evt) {
@@ -88,9 +89,8 @@ public class CMenu {
         englishTest.addQuestion(new Question("Cual es la pregunta10", new String[]{"Nada10", "Si hay10", "no10", "Ya10"}, "/Imagenes/reino-unido.png", 9, "", "https://www.britishcouncil.es/ingles/niveles/a1"));
         CQuestions cQuestions = new CQuestions(frmQuestions, model, englishTest);
         view.dispose();
-        frmQuestions.setVisible(true);
-        Cronometro c = new Cronometro();
-        c.Cronometro();
+        CTemporizador tempo = new CTemporizador();
+        tempo.temporizador(frmQuestions);
     }
 
     private void B1MouseClicked(java.awt.event.MouseEvent evt) {
@@ -111,7 +111,8 @@ public class CMenu {
         englishTest.addQuestion(new Question("Cual es la pregunta10", new String[]{"Nada10", "Si hay10", "no10", "Ya10"}, "/Imagenes/reino-unido.png", 9, "", "https://www.britishcouncil.es/ingles/niveles/a1"));
         CQuestions cQuestions = new CQuestions(frmQuestions, model, englishTest);
         view.dispose();
-        frmQuestions.setVisible(true);
+        CTemporizador tempo = new CTemporizador();
+        tempo.temporizador(frmQuestions);
     }
 
     private void B2MouseClicked(java.awt.event.MouseEvent evt) {
@@ -132,7 +133,8 @@ public class CMenu {
         englishTest.addQuestion(new Question("Cual es la pregunta10", new String[]{"Nada10", "Si hay10", "no10", "Ya10"}, "/Imagenes/reino-unido.png", 9, "", "https://www.britishcouncil.es/ingles/niveles/a1"));
         CQuestions cQuestions = new CQuestions(frmQuestions, model, englishTest);
         view.dispose();
-        frmQuestions.setVisible(true);
+        CTemporizador tempo = new CTemporizador();
+        tempo.temporizador(frmQuestions);
     }
 
     private FrmMenu view;
