@@ -5,6 +5,7 @@
 package Controller;
 
 import Model.Question;
+import Model.User;
 import View.FrmResultados;
 import java.util.ArrayList;
 import javax.swing.JButton;
@@ -13,8 +14,8 @@ import java.awt.Desktop;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.net.URI;
+import java.util.HashMap;
 import javax.swing.JOptionPane;
-
 /**
  *
  * @author Roman Rizo
@@ -32,17 +33,34 @@ public class CResults {
         initBtnsHelp();
         initQuestionsLabel();
         initScore();
+        updateTest();
+    }
+       public static String getCarnet() {
+        return carnet;
+    }
+
+    public static void setCarnet(String carnet) {
+        CResults.carnet = carnet;
+    }
+    
+    
+
+    public static String getTypeTest() {
+        return typeTest;
+    }
+
+    public static void setTypeTest(String typeTest) {
+        CResults.typeTest = typeTest;
     }
 
     public void initScore() {
-        float acum = 0;
+        acum = 0;
         for (int i = 0; i < 10; i++) {
             if(questions.get(i).getIsCorrect()){
                 acum++;
             }
         }
-        System.out.println((acum/10)*100);
-        view.Score.setText((acum/10)*100+"% |  "+Math.round(acum)+ "/10");
+        view.Score.setText(acum+" | "+acum+"/10");
     }
 
     public void initBtnsHelp() {
@@ -78,12 +96,45 @@ public class CResults {
             }
         }
     }
+    public void updateTest(){
+        
+        if(acum > 8){
+            users = FileStream.getUsers();
+            if(users != null && users.get(carnet) != null){
+                switch (getTypeTest()) {
+                    case "A1":
+                        users.get(carnet).getTests().get(0).setStatus(true);
+                        FileStream.setNewUser(users.get(carnet));
+                        break;
+                    case "A2":
+                        users.get(carnet).getTests().get(1).setStatus(true);
+                        FileStream.setNewUser(users.get(carnet));
+                        break;
+                    case "B1":
+                        users.get(carnet).getTests().get(2).setStatus(true);
+                        FileStream.setNewUser(users.get(carnet));
+                        break;
+                    case "B2":
+                        users.get(carnet).getTests().get(3).setStatus(true);
+                        FileStream.setNewUser(users.get(carnet));
+                        break;
+                    default:
+                        throw new AssertionError();
+                }
+            
+            }
+        }    
+    }
 
+    private static String typeTest;
+    private int acum = 0;
+    private static String carnet;
     private FrmResultados view;
     private JButton[] btnsHelp = new JButton[10];
     private JLabel[] questionsLabel = new JLabel[10];
     private ArrayList<Question> questions = null;
     private String score = null;
     private int n = 1;
+    private HashMap<String, User> users = new HashMap<>();
 }
 //new Question("Cual es la pregunta1", new String[]{"Nada1", "Si hay1", "no1", "Ya1"}, "/Imagenes/pregunta (1).png", 0, "")

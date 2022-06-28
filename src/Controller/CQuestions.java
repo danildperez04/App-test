@@ -54,7 +54,7 @@ public class CQuestions {
             n++;
         } else {
             FrmResultados frmResults = new FrmResultados();
-            CResults cResults = new CResults(frmResults, questions);
+            CResults cResults = new CResults(frmResults, questions);//Aqui se manda la info a resultados
             frmResults.setVisible(true);
             view.dispose();
         }

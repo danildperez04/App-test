@@ -25,7 +25,7 @@ public class CLogin implements IComponentsHandler {
         view.BtnSignIn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
                 if (validateLogin()) {
-
+                    CResults.setCarnet(view.FtxtSignInCarnet.getText().trim());
                     FrmMenu menuView = new FrmMenu();
                     CMenu cMenu = new CMenu(menuView);
                     view.dispose();

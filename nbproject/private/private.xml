@@ -3,6 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/Dani-/OneDrive/Documentos/Proyecto/App-test/src/Controller/Main.java</file>
             <file>file:/C:/Users/Dani-/OneDrive/Documentos/Proyecto/App-test/src/Controller/CResults.java</file>
             <file>file:/C:/Users/Dani-/OneDrive/Documentos/Proyecto/App-test/src/Controller/Cronometro.java</file>
@@ -14,6 +15,12 @@
             <file>file:/C:/Users/Dani-/OneDrive/Documentos/Proyecto/App-test/src/Controller/CQuestions.java</file>
             <file>file:/C:/Users/Dani-/OneDrive/Documentos/Proyecto/App-test/src/View/FrmLogin.java</file>
             <file>file:/C:/Users/Dani-/OneDrive/Documentos/Proyecto/App-test/src/Model/Question.java</file>
+=======
+            <file>file:/C:/Users/50584/App-test/src/View/FrmQuestions.java</file>
+            <file>file:/C:/Users/50584/App-test/src/Controller/CMenu.java</file>
+            <file>file:/C:/Users/50584/App-test/src/Controller/CTemporizador.java</file>
+            <file>file:/C:/Users/50584/App-test/src/Controller/Main.java</file>
+>>>>>>> 8009bbc33372dc52f3d3b69495b27facbc4a53ab
         </group>
     </open-files>
 </project-private>

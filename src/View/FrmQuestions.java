@@ -27,7 +27,7 @@ public class FrmQuestions extends javax.swing.JFrame {
         BtnResp3 = new javax.swing.JButton();
         BtnResp4 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
-        gali = new javax.swing.JLabel();
+        LblTemporizador = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Test Ingles Pregunta #");
@@ -113,7 +113,10 @@ public class FrmQuestions extends javax.swing.JFrame {
             }
         });
 
-        gali.setText("jLabel1");
+        LblTemporizador.setBackground(new java.awt.Color(255, 255, 255));
+        LblTemporizador.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        LblTemporizador.setForeground(new java.awt.Color(255, 255, 255));
+        LblTemporizador.setText("jLabel1");
 
         javax.swing.GroupLayout PPrincipalLayout = new javax.swing.GroupLayout(PPrincipal);
         PPrincipal.setLayout(PPrincipalLayout);
@@ -130,7 +133,7 @@ public class FrmQuestions extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PPrincipalLayout.createSequentialGroup()
                 .addGap(26, 26, 26)
-                .addComponent(gali, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(LblTemporizador, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 190, Short.MAX_VALUE)
                 .addComponent(LblImagenPregunta)
                 .addGap(204, 204, 204)
@@ -151,7 +154,7 @@ public class FrmQuestions extends javax.swing.JFrame {
                         .addGap(18, 18, 18))
                     .addGroup(PPrincipalLayout.createSequentialGroup()
                         .addGap(22, 22, 22)
-                        .addComponent(gali, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(LblTemporizador, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addComponent(LblPregunta)
                 .addGap(26, 26, 26)
@@ -226,8 +229,8 @@ public class FrmQuestions extends javax.swing.JFrame {
     public javax.swing.JButton BtnResp4;
     public javax.swing.JLabel LblImagenPregunta;
     public javax.swing.JLabel LblPregunta;
+    public javax.swing.JLabel LblTemporizador;
     private javax.swing.JPanel PPrincipal;
-    public javax.swing.JLabel gali;
     public javax.swing.JButton jButton1;
     // End of variables declaration//GEN-END:variables
     private String help[] = {"Hola", "Si", "Probando", "Sonido", "1", "2", "3", "4", "prueba", "xd"};
